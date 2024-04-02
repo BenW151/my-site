@@ -243,7 +243,7 @@ li {
   margin-bottom: 0;
 }
 
-.text-background {
+.text-gradient-background {
   background: var(--gradient-yellow-purple);
   -webkit-background-clip: text;
   background-clip: text;
@@ -295,13 +295,17 @@ nav {
   align-items: center;
 }
 
-.nav-gradient {
+.gradient-bar {
   background-image: var(--gradient-yellow-purple);
   height: var(--spacing-1);
   z-index: 10000;
   position: absolute;
   width: 100%;
   top: 0;
+}
+
+footer .gradient-bar {
+  position: relative;
 }
 
 .hover-gradient-text-fill {
@@ -438,7 +442,8 @@ a:hover {
 input,
 textarea {
   box-sizing: border-box;
-  border: 2px solid var(--font-color-primary);
+  border: 2px solid var(--font-color-secondary);
+  color: var(--font-color-primary);
   position: relative;
   border-radius: var(--border-radius-box);
   padding: var(--spacing-3);
@@ -666,6 +671,11 @@ textarea:focus {
   display: none;
 }
 
+#skills i {
+  margin: auto;
+  font-size: 3rem;
+}
+
 .team-member-image {
   position: relative;
 }
@@ -762,6 +772,10 @@ textarea:focus {
   content: "\e7fe";
 }
 
+.icon-view::before {
+  content: "\e8f4";
+}
+
 .icon-clipboard::before {
   content: "\e179";
 }
@@ -776,6 +790,10 @@ textarea:focus {
 
 .icon-cog::before {
   content: "\e8b8";
+}
+
+.icon-code::before {
+  content: "\e86f";
 }
 
 .icon-network::before {
@@ -1030,6 +1048,10 @@ textarea:focus {
 
   .quote-svg {
     display: none;
+  }
+
+  #skills .three-column {
+    gap: 3rem;
   }
 }
 

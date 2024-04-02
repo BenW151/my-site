@@ -84,7 +84,7 @@
 
   <body>
     <nav>
-      <div class="nav-gradient"></div>
+      <div class="gradient-bar"></div>
       <h2 class="logo hover-gradient-text-fill">
         <a href="index.html" aria-label="Home Page">Ben Ward</a>
       </h2>
@@ -98,44 +98,15 @@
           aria-label="Home Page"
           >Home</a
         >
-        <div class="dropdown">
-          <a
-            id="navDropdown1"
-            class="dropbtn navigation-item icon-after icon-chevron-right"
-            data-dropdown="myDropdown1"
-            >About</a
-          >
-          <div id="myDropdown1" class="dropdown-content">
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="story.html"
-              aria-label="Story Page"
-              >Our Story</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="team.html"
-              aria-label="Meet the Team Page"
-              >Meet the Team</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="sustainability.html"
-              aria-label="Sustainability Page"
-              >Sustainability</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="careers.html"
-              aria-label="Careers Page"
-              >Careers</a
-            >
-          </div>
-        </div>
         <a
           class="navigation-item icon-after icon-chevron-right"
-          href=""
-          target="_blank"
+          href="#about"
+          aria-label="Home Page"
+          >About</a
+        >
+        <a
+          class="navigation-item icon-after icon-chevron-right"
+          href="#skills"
           aria-label="Home Page"
           >Skills</a
         >
@@ -146,58 +117,38 @@
             data-dropdown="myDropdown2"
             >Services</a
           >
-
           <div id="myDropdown2" class="dropdown-content">
             <a
               class="navigation-item icon-after icon-chevron-right"
-              href="service1.html"
+              href="#services"
               aria-label="Home Page"
               >Professional Services</a
             >
             <a
               class="navigation-item icon-after icon-chevron-right"
-              href="service2.html"
+              href="#services"
               aria-label="Home Page"
               >Managed Services</a
             >
             <a
               class="navigation-item icon-after icon-chevron-right"
-              href="service3.html"
+              href="#services"
               aria-label="Home Page"
               >Field Engineering</a
             >
             <a
               class="navigation-item icon-after icon-chevron-right"
-              href="service3.html"
+              href="#services"
               aria-label="Home Page"
               >Mass Deployment</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="service3.html"
-              aria-label="Home Page"
-              >Mobility</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="service3.html"
-              aria-label="Home Page"
-              >Resourcing</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="service3.html"
-              aria-label="Home Page"
-              >On-Demand Support</a
             >
           </div>
         </div>
         <a
           class="navigation-item icon-after icon-chevron-right"
-          href=""
-          target="_blank"
+          href="#projects"
           aria-label="Home Page"
-          >Portfolio</a
+          >Projects</a
         >
         <a class="button" href="contact.html">Contact Me</a>
         <svg
@@ -225,7 +176,7 @@
 
     <main>
       <section id="hero">
-        <div class="container two-column background-coloured">
+        <div class="container two-column">
           <video playsinline autoplay muted loop class="anim fade-in">
             <source src="images\background-video.mp4" type="video/mp4" />
           </video>
@@ -275,7 +226,7 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <h3>Our Key Values</h3>
+            <h3>Key Values</h3>
             <ul>
               <li class="icon-before icon-arrow-right">
                 Understand the needs of the client.
@@ -304,10 +255,42 @@
         </div>
       </section>
 
+      <section id="skills">
+        <div class="container two-column background-alt">
+          <div class="container-item three-column">
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-solid fa-paintbrush"></i>
+          </div>
+          <div class="container-item">
+            <h2>Skills</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="services">
         <div class="container four-column">
           <div class="container-item background-coloured">
-            <h2>Our Services</h2>
+            <h2>Services</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -315,32 +298,35 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
             <a
-              class="button button-secondary"
+              class="button button-tertiary"
               href="services.html"
               aria-label="Home Page"
               >Read More</a
             >
           </div>
           <div class="container-item icon-before icon-people">
-            <h3>Professional Services</h3>
+            <h3>UI/UX Design</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              I develop the user interface. Web page development. I create ux
+              element interactions. I position your company brand.
             </p>
           </div>
           <div class="container-item icon-before icon-clipboard">
-            <h3>Managed Services</h3>
+            <h3>Front End Development</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              I develop the user interface. Web page development. I create ux
+              element interactions. I position your company brand.
             </p>
           </div>
           <div class="container-item icon-before icon-cog">
-            <h3>Field Engineering</h3>
+            <h3>Brand Design</h3>
+            <p>
+              I develop the user interface. Web page development. I create ux
+              element interactions. I position your company brand.
+            </p>
+          </div>
+          <div class="container-item icon-before icon-network">
+            <h3>SEO</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -348,8 +334,8 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div class="container-item icon-before icon-network">
-            <h3>Mass Deployment</h3>
+          <div class="container-item icon-before icon-support">
+            <h3>On-Demand Support</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -375,54 +361,13 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div class="container-item icon-before icon-support">
-            <h3>On-Demand Support</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
         </div>
       </section>
 
-      <section id="partners">
-        <div class="container two-column background-alt">
-          <div class="container-item three-column">
-            <img src="images/aruba.png" alt="Aruba Logo" />
-            <img src="images/cisco.png" alt="Cisco Logo" />
-            <img src="images/microsoft.png" alt="Microsoft Logo" />
-            <img src="images/dell.png" alt="Dell Logo" />
-            <img src="images/juniper.png" alt="Juniper Logo" />
-            <img src="images/fortinet.png" alt="Fortinet Logo" />
-          </div>
-          <div class="container-item">
-            <h2>Technology Partners</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="team">
+      <section id="projects">
         <div class="container four-column background-alt">
           <div class="container-item">
-            <h2>Meet The Team</h2>
+            <h2>Projects</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -433,21 +378,22 @@
               class="button button-secondary"
               href="contact.html"
               aria-label="Home Page"
-              >Contact Us</a
+              >Contact Me</a
             >
           </div>
           <div class="container-item team-member">
             <div class="team-member-image">
+              <!--TODO Replace Images-->
               <img src="images/person-3.png" alt="team member 1" />
             </div>
             <h3>
-              Tom Smith<a
-                href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
-                class="icon icon-person-add team-social"
+              Tia's Tours<a
+                href="https://benw151.github.io/tias-tours/"
+                class="icon icon-view team-social"
                 target="_blank"
                 aria-label="Home Page"></a>
             </h3>
-            <h4>Managing Director</h4>
+            <h4>Tour Operator</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -460,13 +406,13 @@
               <img src="images/person-3.png" alt="team member 1" />
             </div>
             <h3>
-              Tom Smith<a
-                href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
-                class="icon icon-person-add team-social"
+              Node One<a
+                href="https://benw151.github.io/node-one/"
+                class="icon icon-view team-social"
                 target="_blank"
                 aria-label="Home Page"></a>
             </h3>
-            <h4>Technical Director</h4>
+            <h4>IT Services</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -479,13 +425,13 @@
               <img src="images/person-3.png" alt="team member 1" />
             </div>
             <h3>
-              Tom Smith<a
+              TeeTravels<a
                 href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
-                class="icon icon-person-add team-social"
+                class="icon icon-view team-social"
                 target="_blank"
                 aria-label="Home Page"></a>
             </h3>
-            <h4>CEO</h4>
+            <h4>Travel Blog</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -583,7 +529,7 @@
               <h3 class="counter" data-num="5432"></h3>
               <p>Lines Of Code</p>
             </div>
-            <div class="container-item icon-before icon-cog"></div>
+            <div class="container-item icon-before icon-code"></div>
           </div>
           <div class="container-item blur-box two-column">
             <div class="container-item">
@@ -657,7 +603,7 @@
             </div>
 
             <div class="container-item contact-details background-alt">
-              <h3>Our Contact Details</h3>
+              <h3>Contact Details</h3>
               <div class="contact-items">
                 <h3 class="icon-before icon-email">Email</h3>
                 <a href="mailto:myemail@gmail.com" aria-label="Home Page"
@@ -687,7 +633,7 @@
       <section id="testimonials">
         <div class="container two-column background-coloured">
           <div class="container-item">
-            <h2>Trusted By Our Clients</h2>
+            <h2>Trusted By Clients</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -773,7 +719,7 @@
       <section id="feedback">
         <div class="container two-column">
           <div class="container-item span-column-2">
-            <h2>What Our Clients Say</h2>
+            <h2>What Clients Say</h2>
           </div>
           <div class="container-item">
             <p class="feedback-author">James Thompson - Company Name</p>
@@ -847,8 +793,11 @@
             <p>
               Find out more about how I can support your technology challenges
             </p>
-            <a class="button button-tertiary" href="contact.html" aria-label="Home Page"
-              >Contact Us</a
+            <a
+              class="button button-tertiary"
+              href="contact.html"
+              aria-label="Home Page"
+              >Contact Me</a
             >
           </div>
         </div>
@@ -857,6 +806,7 @@
 
     <footer>
       <div id="footer">
+        <div class="gradient-bar"></div>
         <div class="container three-column">
           <div class="container-item">
             <h3>Ben Ward</h3>
@@ -896,7 +846,7 @@
               <!--TODO replace icon with non font awesome icon-->
               <a
                 href="contact.html"
-                aria-label="Contact Us Page"
+                aria-label="Contact Page"
                 class="icon icon-email"></a>
             </div>
           </div>
@@ -933,7 +883,7 @@
                 class="footer-navigation-item"
                 href="contact.html"
                 aria-label="Home Page"
-                >Contact Us</a
+                >Contact Me</a
               >
             </div>
           </div>
