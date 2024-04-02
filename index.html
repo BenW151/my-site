@@ -85,7 +85,7 @@
   <body>
     <nav>
       <div class="nav-gradient"></div>
-      <h2 class="logo">
+      <h2 class="logo gradient-hover">
         <a href="index.html" aria-label="Home Page">Ben Ward</a>
       </h2>
       <div
@@ -103,7 +103,7 @@
             id="navDropdown1"
             class="dropbtn navigation-item icon-after icon-chevron-right"
             data-dropdown="myDropdown1"
-            >Company</a
+            >About</a
           >
           <div id="myDropdown1" class="dropdown-content">
             <a
@@ -132,6 +132,13 @@
             >
           </div>
         </div>
+        <a
+          class="navigation-item icon-after icon-chevron-right"
+          href=""
+          target="_blank"
+          aria-label="Home Page"
+          >Skills</a
+        >
         <div class="dropdown">
           <a
             id="navDropdown2"
@@ -187,12 +194,12 @@
         </div>
         <a
           class="navigation-item icon-after icon-chevron-right"
-          href="https://www.zendesk.com/"
+          href=""
           target="_blank"
           aria-label="Home Page"
-          >Login</a
+          >Portfolio</a
         >
-        <a class="navigation-item button" href="contact.html">Contact Us</a>
+        <a class="navigation-item button" href="contact.html">Contact Me</a>
         <svg
           class="logo-svg"
           version="1.0"
@@ -219,24 +226,25 @@
     <main>
       <section id="hero">
         <div class="container two-column background-coloured">
+          <video playsinline autoplay muted loop class="anim fade-in">
+            <source
+              src="images\background-video.mp4"
+              type="video/mp4" />
+          </video>
           <div class="hero-text container-item fade-in">
-            <h1>Your Next IT Services Partner</h1>
+            <h1>Hi, I'm Ben</h1>
+            <h2>Web Developer</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <a class="button" href="contact.html" aria-label="Home Page"
-              >Contact Us</a
+              >Contact Me</a
             >
           </div>
           <div class="hero-image container-item">
             <svg
-              class="logo-svg"
+              class="logo-svg fade-in"
               version="1.0"
               width="70%"
               height="70%"
@@ -259,9 +267,48 @@
         </div>
       </section>
 
+      <section id="about">
+        <div class="container two-column">
+          <div class="container-item">
+            <h2>About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <h3>Our Key Values</h3>
+            <ul>
+              <li class="icon-before icon-arrow-right">
+                Understand the needs of the client.
+              </li>
+              <li class="icon-before icon-arrow-right">
+                Deliver and retain high standards of execution.
+              </li>
+              <li class="icon-before icon-arrow-right">
+                Continual evaluation of services both commercially and
+                technically.
+              </li>
+              <li class="icon-before icon-arrow-right">
+                Strive for 100% customer satisfaction.
+              </li>
+            </ul>
+            <a
+              class="button button-secondary"
+              href="about.html"
+              aria-label="Home Page"
+              >Read More</a
+            >
+          </div>
+          <div class="container-item">
+            <img src="images/about.png" alt="photo" />
+          </div>
+        </div>
+      </section>
+
       <section id="services">
         <div class="container four-column">
-          <div class="container-item background-alt">
+          <div class="container-item background-coloured">
             <h2>Our Services</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -370,45 +417,6 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="container two-column">
-          <div class="container-item">
-            <h2>About Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <h3>Our Key Values</h3>
-            <ul>
-              <li class="icon-before icon-arrow-right">
-                Understand the needs of the client.
-              </li>
-              <li class="icon-before icon-arrow-right">
-                Deliver and retain high standards of execution.
-              </li>
-              <li class="icon-before icon-arrow-right">
-                Continual evaluation of services both commercially and
-                technically.
-              </li>
-              <li class="icon-before icon-arrow-right">
-                Strive for 100% customer satisfaction.
-              </li>
-            </ul>
-            <a
-              class="button button-secondary"
-              href="about.html"
-              aria-label="Home Page"
-              >Read More</a
-            >
-          </div>
-          <div class="container-item">
-            <img src="images/about.png" alt="photo" />
           </div>
         </div>
       </section>
@@ -561,21 +569,21 @@
           <div class="container-item blur-box two-column">
             <div class="container-item">
               <h3 class="counter" data-num="75"></h3>
-              <p>Wireless Surveys</p>
+              <p>Project Completed</p>
             </div>
             <div class="container-item icon-before icon-wifi"></div>
           </div>
           <div class="container-item blur-box two-column">
             <div class="container-item">
-              <h3 class="counter" data-num="99" data-is-percentage="true"></h3>
-              <p>SLA Achieved</p>
+              <h3 class="counter" data-num="100" data-is-percentage="true"></h3>
+              <p>Customer Satisfaction</p>
             </div>
             <div class="container-item icon-before icon-clipboard"></div>
           </div>
           <div class="container-item blur-box two-column">
             <div class="container-item">
-              <h3 class="counter" data-num="250"></h3>
-              <p>Installs</p>
+              <h3 class="counter" data-num="5432"></h3>
+              <p>Lines Of Code</p>
             </div>
             <div class="container-item icon-before icon-cog"></div>
           </div>
@@ -635,12 +643,8 @@
                       <input type="tel" name="tel" autocomplete="tel" />
                     </label>
                     <label>
-                      <p>Company Name:</p>
-                      <input
-                        type="text"
-                        name="company-name"
-                        autocomplete="organization"
-                        required />
+                      <p>Project Title</p>
+                      <input type="text" name="project-title" required />
                     </label>
                     <label>
                       <p>Message:</p>
@@ -839,7 +843,7 @@
       </section>
 
       <section id="learn-more">
-        <div class="container">
+        <div class="container background-gradient text-center-align">
           <div class="container-item">
             <h2>Want to learn more?</h2>
             <p>

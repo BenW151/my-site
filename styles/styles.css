@@ -33,6 +33,7 @@ body {
     #d630d6 66.67%,
     #8800ff 100%
   );
+  /*linear-gradient(135deg, #382678 0%, #be1459 100%);*/
   --font-family-primary: "Montserrat", sans-serif;
   --font-family-secondary: "PT Sans", sans-serif;
 }
@@ -125,7 +126,7 @@ li {
 .container {
   position: relative;
   width: 100%;
-  padding: var(--spacing-4);
+  padding: var(--spacing-5);
   justify-content: center;
   margin: 0 auto;
 }
@@ -176,11 +177,23 @@ li {
 .background-coloured {
   background-color: var(--background-secondary);
   padding-bottom: var(--spacing-4);
+  border-radius: var(--border-radius-box);
+
+}
+
+.background-gradient {
+  background: var(--gradient);
 }
 
 .background-alt {
   background-color: var(--background-opacity);
   border-radius: var(--border-radius-box);
+}
+
+.text-center-align,
+.text-center-align .button {
+  text-align: center;
+  margin: auto;
 }
 
 .blur-box {
@@ -202,8 +215,10 @@ li {
   margin-bottom: 0;
 }
 
-#hero .container {
-  min-height: 100vh;
+.text-background {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo-svg {
@@ -218,6 +233,17 @@ footer .logo-svg {
 #hero .logo-svg {
   display: block;
   margin: auto;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-76px);
+  display: block;
+  object-fit: cover;
 }
 
 .fade-in {
@@ -238,7 +264,6 @@ body.loaded .fade-in {
 nav {
   display: flex;
   align-items: center;
-  background-color: var(--background-secondary);
 }
 
 .nav-gradient {
@@ -250,15 +275,21 @@ nav {
   top: 0;
 }
 
-h2.logo a {
+.gradient-hover {
   margin-left: var(--spacing-3);
   text-transform: uppercase;
   white-space: nowrap;
+  color:var(--font-color-primary);
+  background-image:linear-gradient(to right, var(--font-color-primary), var(--font-color-primary) 33.33333%, #d630d6 66.67%,#8800ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 100%;
+  background-position: top left;
+  transition:all 1s ease-in-out;
 }
 
-h2.logo a:hover {
-  color: var(--accent-primary);
-  background: none;
+.gradient-hover:hover {
+  background-position: top left 100%;
 }
 
 .navigation-items {
@@ -283,7 +314,6 @@ h2.logo a:hover {
 
 a:focus,
 a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: var(--border-radius-box);
   text-decoration: none;
 }
@@ -309,7 +339,7 @@ a:hover {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  background-color: var(--background-primary);
+  background-color: var(--accent-tertiary);
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -341,7 +371,7 @@ a:hover {
   width: 14px;
   height: 14px;
   transform: rotate(45deg);
-  background-color: var(--background-primary);
+  background-color: var(--accent-tertiary);
   position: absolute;
   top: -4px;
   left: 50%;
@@ -352,11 +382,11 @@ a:hover {
 .dropdown-content a {
   padding: 12px 16px;
   display: block;
-  color: var(--font-color-primary);
+  color: var(--font-color-secondary);
 }
 
 .dropdown-content a:hover {
-  color: var(--font-color-secondary);
+  color: var(--font-color-primary);
   background-color: var(--background-secondary);
 }
 
@@ -619,15 +649,6 @@ textarea:focus {
   text-decoration: none;
 }
 
-#learn-more .container {
-  text-align: center;
-  background-image: var(--gradient);
-}
-
-#learn-more .button {
-  margin: auto;
-}
-
 #stats .icon-before::before {
   position: relative;
   font-size: 3rem;
@@ -789,7 +810,7 @@ textarea:focus {
   nav::before {
     content: "";
     position: absolute;
-    background: rgb(136, 0, 255, 0.8);
+    background: rgb(50, 50, 50, 0.8);
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100%;
@@ -825,13 +846,13 @@ textarea:focus {
 
   .icon-burger::before {
     content: "\e5d2";
-    color: var(--font-color-secondary);
+    color: inherit;
     opacity: 1;
   }
 
   .icon-burger::after {
     content: "\e5cd";
-    color: var(--font-color-secondary);
+    color: inherit;
     opacity: 0;
     transform: translate(-50%, -50%) rotate(90deg);
   }
@@ -851,7 +872,7 @@ textarea:focus {
     position: absolute;
     left: 0;
     top: calc(42px + 3 * (var(--spacing-1)));
-    background: rgb(136, 0, 255, 0.8);
+    background: rgb(50, 50, 50, 0.8);
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100vh;
