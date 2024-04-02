@@ -243,13 +243,6 @@ li {
   margin-bottom: 0;
 }
 
-.text-gradient-background {
-  background: var(--gradient-yellow-purple);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .logo-svg {
   margin: 0;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
@@ -330,8 +323,16 @@ nav .gradient-bar {
   background-position: top left 100%;
 }
 
+.text-gradient-background {
+  background: var(--gradient-yellow-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .navigation-items .navigation-item,
-footer a {
+footer a,
+.contact-items a {
   background-image: var(--gradient-transparent-purple);
   background-size: 300% 100%;
   background-position: top left;
@@ -340,7 +341,8 @@ footer a {
 }
 
 .navigation-items .navigation-item:hover,
-footer a:hover {
+footer a:hover,
+.contact-items a:hover {
   background-position: top left 100%;
 }
 
