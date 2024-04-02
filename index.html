@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title Tag -->
+    <title>Ben Ward - Web Development</title>
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Offering top-notch IT services and solutions tailored to your business needs. From cloud services to cybersecurity, we've got you covered." />
+    <!-- This should be a concise summary of your page's content, including relevant keywords. -->
+
+    <!-- Meta Keywords (less important nowadays, but can be included) -->
+    <meta
+      name="keywords"
+      content="IT Services, Cybersecurity, Cloud Services, IT Solutions, Technology Support" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://benw151.github.io/my-site/index.html" />
+    <!-- Helps prevent duplicate content issues -->
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- Preconnect for Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet" />
+
+    <!-- JavaScript Files -->
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/83d90bf61e.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Social Media Meta Tags -->
+    <meta
+      property="og:title"
+      content="IT Services - Your Solution for Modern IT Challenges" />
+    <meta
+      property="og:description"
+      content="Offering top-notch IT services and solutions tailored to your business needs. From cloud services to cybersecurity, we've got you covered." />
+    <meta
+      property="og:image"
+      content="https://www.yourwebsite.com/images/social-preview.png" />
+    <meta property="og:url" content="https://www.yourwebsite.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Add any additional tags specific to your website's needs here -->
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-gradient"></div>
+      <h2 class="logo">
+        <a href="index.html" aria-label="Home Page">Ben Ward</a>
+      </h2>
+      <div
+        class="burger-menu icon-after icon-before icon-burger"
+        onclick="toggleMenu()"></div>
+      <div class="navigation-items">
+        <a
+          class="navigation-item icon-after icon-chevron-right"
+          href="index.html"
+          aria-label="Home Page"
+          >Home</a
+        >
+        <div class="dropdown">
+          <a
+            id="navDropdown1"
+            class="dropbtn navigation-item icon-after icon-chevron-right"
+            data-dropdown="myDropdown1"
+            >Company</a
+          >
+          <div id="myDropdown1" class="dropdown-content">
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="story.html"
+              aria-label="Story Page"
+              >Our Story</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="team.html"
+              aria-label="Meet the Team Page"
+              >Meet the Team</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="sustainability.html"
+              aria-label="Sustainability Page"
+              >Sustainability</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="careers.html"
+              aria-label="Careers Page"
+              >Careers</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <a
+            id="navDropdown2"
+            class="dropbtn navigation-item icon-after icon-chevron-right"
+            data-dropdown="myDropdown2"
+            >Services</a
+          >
+
+          <div id="myDropdown2" class="dropdown-content">
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="service1.html"
+              aria-label="Home Page"
+              >Professional Services</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="service2.html"
+              aria-label="Home Page"
+              >Managed Services</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="service3.html"
+              aria-label="Home Page"
+              >Field Engineering</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="service3.html"
+              aria-label="Home Page"
+              >Mass Deployment</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="service3.html"
+              aria-label="Home Page"
+              >Mobility</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="service3.html"
+              aria-label="Home Page"
+              >Resourcing</a
+            >
+            <a
+              class="navigation-item icon-after icon-chevron-right"
+              href="service3.html"
+              aria-label="Home Page"
+              >On-Demand Support</a
+            >
+          </div>
+        </div>
+        <a
+          class="navigation-item icon-after icon-chevron-right"
+          href="https://www.zendesk.com/"
+          target="_blank"
+          aria-label="Home Page"
+          >Login</a
+        >
+        <a class="navigation-item button" href="contact.html">Contact Us</a>
+        <svg
+          class="logo-svg"
+          version="1.0"
+          width="5rem"
+          height="5rem"
+          viewBox="0 0 225.000000 225.000000"
+          preserveAspectRatio="xMidYMid meet"
+          xmlns="http://www.w3.org/2000/svg">
+          <g
+            transform="matrix(0.1, 0.000897, 0, -0.1, 0, 223.992218)"
+            fill="var(--accent-tertiary)"
+            stroke="none">
+            <path
+              d="M 210 1125 L 210 730 L 413 730 C 699 730 792 756 840 850 C 866 901 867 983 841 1030 C 815 1079 746 1120 676 1127 C 616 1133 607.53 1137.282 653 1150 C 716.568 1167.78 796 1203 819 1263 C 858 1364 800 1464 682 1500 C 627 1517 589 1520 414 1520 L 210 1520 L 210 1125 Z M 549 1431 C 573 1430 596.265 1422.171 620.265 1398.171 C 649.265 1369.171 650 1355 650 1316 C 650 1215 603 1180 470 1180 L 390 1180 L 390 1310 L 390 1434.735 L 453 1435 C 487 1433 530 1431 549 1431 Z M 611 1074 C 657 1054 680 1014 680 955 C 680 853 633 820 486 820 L 390 820 L 390 958 L 390 1095 L 482 1092 C 537 1090 590 1083 611 1074 Z" />
+            <path
+              d="M 867 1508 C 873 1501 946 1323 1030 1112 L 1182 729 L 1217 732 L 1252 735 L 1395 1116 C 1473 1326 1540 1502 1544 1509 C 1549 1517 1536 1520 1502 1520 L 1453 1520 L 1383 1328 C 1344 1222 1300 1100 1285 1057 C 1270 1014 1256 981 1255 982 C 1253 984 1215 1084 1170 1205 C 1067 1480 1063 1488 1029 1505 C 993 1524 853 1526 867 1508 Z" />
+            <path
+              d="M 1860 1288 C 1813 1160 1771 1042 1767 1025 C 1762 1009 1755 992 1752 988 C 1745 981 1590 1384 1590 1408 C 1590 1415 1552 1344 1531 1287 L 1492 1183 L 1583 956 L 1674 729 L 1709 732 L 1743 735 L 1890 1128 L 2038 1520 L 1991 1520 L 1944 1520 L 1860 1288 Z" />
+          </g>
+        </svg>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="container two-column background-coloured">
+          <div class="hero-text container-item fade-in">
+            <h1>Your Next IT Services Partner</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a class="button" href="contact.html" aria-label="Home Page"
+              >Contact Us</a
+            >
+          </div>
+          <div class="hero-image container-item">
+            <svg
+              class="logo-svg"
+              version="1.0"
+              width="70%"
+              height="70%"
+              viewBox="0 0 225.000000 225.000000"
+              preserveAspectRatio="xMidYMid meet"
+              xmlns="http://www.w3.org/2000/svg">
+              <g
+                transform="matrix(0.1, 0.000897, 0, -0.1, 0, 223.992218)"
+                fill="var(--accent-tertiary)"
+                stroke="none">
+                <path
+                  d="M 210 1125 L 210 730 L 413 730 C 699 730 792 756 840 850 C 866 901 867 983 841 1030 C 815 1079 746 1120 676 1127 C 616 1133 607.53 1137.282 653 1150 C 716.568 1167.78 796 1203 819 1263 C 858 1364 800 1464 682 1500 C 627 1517 589 1520 414 1520 L 210 1520 L 210 1125 Z M 549 1431 C 573 1430 596.265 1422.171 620.265 1398.171 C 649.265 1369.171 650 1355 650 1316 C 650 1215 603 1180 470 1180 L 390 1180 L 390 1310 L 390 1434.735 L 453 1435 C 487 1433 530 1431 549 1431 Z M 611 1074 C 657 1054 680 1014 680 955 C 680 853 633 820 486 820 L 390 820 L 390 958 L 390 1095 L 482 1092 C 537 1090 590 1083 611 1074 Z" />
+                <path
+                  d="M 867 1508 C 873 1501 946 1323 1030 1112 L 1182 729 L 1217 732 L 1252 735 L 1395 1116 C 1473 1326 1540 1502 1544 1509 C 1549 1517 1536 1520 1502 1520 L 1453 1520 L 1383 1328 C 1344 1222 1300 1100 1285 1057 C 1270 1014 1256 981 1255 982 C 1253 984 1215 1084 1170 1205 C 1067 1480 1063 1488 1029 1505 C 993 1524 853 1526 867 1508 Z" />
+                <path
+                  d="M 1860 1288 C 1813 1160 1771 1042 1767 1025 C 1762 1009 1755 992 1752 988 C 1745 981 1590 1384 1590 1408 C 1590 1415 1552 1344 1531 1287 L 1492 1183 L 1583 956 L 1674 729 L 1709 732 L 1743 735 L 1890 1128 L 2038 1520 L 1991 1520 L 1944 1520 L 1860 1288 Z" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container four-column">
+          <div class="container-item background-alt">
+            <h2>Our Services</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              class="button button-secondary"
+              href="services.html"
+              aria-label="Home Page"
+              >Read More</a
+            >
+          </div>
+          <div class="container-item icon-before icon-people">
+            <h3>Professional Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item icon-before icon-clipboard">
+            <h3>Managed Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item icon-before icon-cog">
+            <h3>Field Engineering</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item icon-before icon-network">
+            <h3>Mass Deployment</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item icon-before icon-wifi">
+            <h3>Mobility</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item icon-before icon-person-add">
+            <h3>Resourcing</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item icon-before icon-support">
+            <h3>On-Demand Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners">
+        <div class="container two-column background-alt">
+          <div class="container-item three-column">
+            <img src="images/aruba.png" alt="Aruba Logo" />
+            <img src="images/cisco.png" alt="Cisco Logo" />
+            <img src="images/microsoft.png" alt="Microsoft Logo" />
+            <img src="images/dell.png" alt="Dell Logo" />
+            <img src="images/juniper.png" alt="Juniper Logo" />
+            <img src="images/fortinet.png" alt="Fortinet Logo" />
+          </div>
+          <div class="container-item">
+            <h2>Technology Partners</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container two-column">
+          <div class="container-item">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <h3>Our Key Values</h3>
+            <ul>
+              <li class="icon-before icon-arrow-right">
+                Understand the needs of the client.
+              </li>
+              <li class="icon-before icon-arrow-right">
+                Deliver and retain high standards of execution.
+              </li>
+              <li class="icon-before icon-arrow-right">
+                Continual evaluation of services both commercially and
+                technically.
+              </li>
+              <li class="icon-before icon-arrow-right">
+                Strive for 100% customer satisfaction.
+              </li>
+            </ul>
+            <a
+              class="button button-secondary"
+              href="about.html"
+              aria-label="Home Page"
+              >Read More</a
+            >
+          </div>
+          <div class="container-item">
+            <img src="images/about.png" alt="photo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="container four-column background-alt">
+          <div class="container-item">
+            <h2>Meet The Team</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              class="button button-secondary"
+              href="contact.html"
+              aria-label="Home Page"
+              >Contact Us</a
+            >
+          </div>
+          <div class="container-item team-member">
+            <div class="team-member-image">
+              <img src="images/person-3.png" alt="team member 1" />
+            </div>
+            <h3>
+              Tom Smith<a
+                href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
+                class="icon icon-person-add team-social"
+                target="_blank"
+                aria-label="Home Page"></a>
+            </h3>
+            <h4>Managing Director</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item team-member">
+            <div class="team-member-image">
+              <img src="images/person-3.png" alt="team member 1" />
+            </div>
+            <h3>
+              Tom Smith<a
+                href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
+                class="icon icon-person-add team-social"
+                target="_blank"
+                aria-label="Home Page"></a>
+            </h3>
+            <h4>Technical Director</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item team-member">
+            <div class="team-member-image">
+              <img src="images/person-3.png" alt="team member 1" />
+            </div>
+            <h3>
+              Tom Smith<a
+                href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
+                class="icon icon-person-add team-social"
+                target="_blank"
+                aria-label="Home Page"></a>
+            </h3>
+            <h4>CEO</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <div class="container two-column">
+          <div class="container-item">
+            <h2>Roadmap</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              class="button button-secondary"
+              href="about.html"
+              aria-label="Home Page"
+              >Read More</a
+            >
+          </div>
+          <div class="container-item timeline">
+            <div class="timeline-inner">
+              <dl data-timeline="standard">
+                <dt>Q3 2023</dt>
+                <dd>
+                  Launch a dedicated AI and machine learning division to
+                  innovate and implement smart solutions across industries.
+                </dd>
+                <dt>Q4 2023</dt>
+                <dd>
+                  Expand into the Asian market, establishing a presence in two
+                  strategic locations to serve our growing client base.
+                </dd>
+                <dt>Q1 2024</dt>
+                <dd>
+                  Develop and launch an advanced analytics platform to provide
+                  actionable insights for business optimization.
+                </dd>
+                <dt>Q2 2024</dt>
+                <dd>
+                  Host our first international tech conference, showcasing
+                  groundbreaking technologies and fostering industry
+                  partnerships.
+                </dd>
+                <dt>Q3 2024</dt>
+                <dd>
+                  Implement a new training and development program for employees
+                  to foster innovation and leadership skills.
+                </dd>
+                <dt>Q4 2024</dt>
+                <dd>
+                  Introduce a sustainability initiative aimed at reducing our
+                  carbon footprint and promoting green technologies.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats">
+        <div class="container three-column background-coloured">
+          <div class="container-item span-column-3">
+            <h2>Stats</h2>
+          </div>
+          <div class="container-item blur-box two-column">
+            <div class="container-item">
+              <h3 class="counter" data-num="75"></h3>
+              <p>Wireless Surveys</p>
+            </div>
+            <div class="container-item icon-before icon-wifi"></div>
+          </div>
+          <div class="container-item blur-box two-column">
+            <div class="container-item">
+              <h3 class="counter" data-num="99" data-is-percentage="true"></h3>
+              <p>SLA Achieved</p>
+            </div>
+            <div class="container-item icon-before icon-clipboard"></div>
+          </div>
+          <div class="container-item blur-box two-column">
+            <div class="container-item">
+              <h3 class="counter" data-num="250"></h3>
+              <p>Installs</p>
+            </div>
+            <div class="container-item icon-before icon-cog"></div>
+          </div>
+          <div class="container-item blur-box two-column">
+            <div class="container-item">
+              <h3 class="counter" data-num="512"></h3>
+              <p>Call Outs</p>
+            </div>
+            <div class="container-item icon-before icon-support"></div>
+          </div>
+          <div class="container-item blur-box two-column">
+            <div class="container-item">
+              <h3 class="counter" data-num="243"></h3>
+              <p>Satisfied Customers</p>
+            </div>
+            <div class="container-item icon-before icon-person-add"></div>
+          </div>
+          <div class="container-item blur-box two-column">
+            <div class="container-item">
+              <h3 class="counter" data-num="53"></h3>
+              <p>Decomissions</p>
+            </div>
+            <div class="container-item icon-before icon-wifi"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="contact">
+          <div class="container two-column">
+            <div class="container-item">
+              <h2>Get In Touch</h2>
+              <div class="fcf-body">
+                <div id="fcf-form">
+                  <form
+                    action="https://formspree.io/f/mjvnevrk"
+                    method="POST"
+                    autocomplete="on">
+                    <label>
+                      <p>Name:</p>
+                      <input
+                        type="text"
+                        name="name"
+                        autocomplete="name"
+                        required />
+                    </label>
+                    <label>
+                      <p>Email:</p>
+                      <input
+                        type="email"
+                        name="email"
+                        autocomplete="email"
+                        required />
+                    </label>
+                    <label>
+                      <p>Phone Number:</p>
+                      <input type="tel" name="tel" autocomplete="tel" />
+                    </label>
+                    <label>
+                      <p>Company Name:</p>
+                      <input
+                        type="text"
+                        name="company-name"
+                        autocomplete="organization"
+                        required />
+                    </label>
+                    <label>
+                      <p>Message:</p>
+                      <textarea type="text" name="message" required></textarea>
+                    </label>
+                    <button class="button button-secondary" type="submit">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-item contact-details background-alt">
+              <h3>Our Contact Details</h3>
+              <div class="contact-items">
+                <h3 class="icon-before icon-email">Email</h3>
+                <a href="mailto:myemail@gmail.com" aria-label="Home Page"
+                  >myemail@gmail.com</a
+                >
+                <h3 class="icon-before icon-phone">Phone</h3>
+                <a href="tel:+447000000000" aria-label="Home Page"
+                  >+447000 000000</a
+                >
+                <h3 class="icon-before icon-office">Placeholder</h3>
+                <a
+                  href="https://maps.app.goo.gl/5w8V8r8cXyQzJz699"
+                  target="_blank"
+                  aria-label="Address Google Maps">
+                  <span>Placeholder</span><br />
+                  <span>Kingston House</span><br />
+                  <span>Lydiard Fields</span><br />
+                  <span>Swindon</span><br />
+                  <span>SN5 8UB</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="container two-column background-coloured">
+          <div class="container-item">
+            <h2>Trusted By Our Clients</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container two-column">
+            <svg
+              class="quote-svg"
+              style="position: absolute"
+              height="150px"
+              width="150px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 191.029 191.029"
+              xml:space="preserve">
+              <path
+                style="fill: #f69322"
+                d="M44.33,88.474v15.377h38.417v82.745H0v-82.745h0.002V88.474c0-31.225,8.984-54.411,26.704-68.918
+              C38.964,9.521,54.48,4.433,72.824,4.433v44.326C62.866,48.759,44.33,48.759,44.33,88.474z M181.107,48.759V4.433
+              c-18.343,0-33.859,5.088-46.117,15.123c-17.72,14.507-26.705,37.694-26.705,68.918v15.377h0v82.745h82.744v-82.745h-38.417V88.474
+              C152.613,48.759,171.149,48.759,181.107,48.759z" />
+            </svg>
+            <svg
+              class="quote-svg"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="150px"
+              height="150px"
+              viewBox="0 0 349.078 349.078"
+              style="position: absolute; right: 0; bottom: 0"
+              xml:space="preserve">
+              <g>
+                <path
+                  style="fill: #f69322"
+                  d="M198.779,322.441v-58.245c0-7.903,6.406-14.304,14.304-14.304c28.183,0,43.515-28.904,45.643-85.961h-45.643
+		c-7.897,0-14.304-6.41-14.304-14.304V26.64c0-7.9,6.406-14.301,14.304-14.301h121.69c7.896,0,14.305,6.408,14.305,14.301v122.988
+		c0,27.349-2.761,52.446-8.181,74.611c-5.568,22.722-14.115,42.587-25.398,59.049c-11.604,16.917-26.132,30.192-43.155,39.437
+		c-17.152,9.304-37.09,14.026-59.267,14.026C205.186,336.745,198.779,330.338,198.779,322.441z M14.301,249.887
+		C6.404,249.887,0,256.293,0,264.185v58.257c0,7.896,6.404,14.298,14.301,14.298c22.166,0,42.114-4.723,59.255-14.026
+		c17.032-9.244,31.558-22.508,43.161-39.437c11.29-16.462,19.836-36.328,25.404-59.061c5.423-22.165,8.178-47.263,8.178-74.6V26.628
+		c0-7.9-6.41-14.301-14.304-14.301H14.301C6.404,12.327,0,18.734,0,26.628v122.988c0,7.899,6.404,14.304,14.301,14.304h45.002
+		C57.201,220.982,42.09,249.887,14.301,249.887z" />
+              </g>
+            </svg>
+            <div class="container-item blur-box blur-box-top">
+              <p>
+                Their customer service is unmatched. Prompt, reliable, and
+                always willing to go the extra mile
+              </p>
+              <p style="font-weight: bold">James Thompson - Company Name</p>
+            </div>
+            <div class="container-item blur-box blur-box-bottom">
+              <p>
+                With their help, we've been able to innovate and stay ahead of
+                the curve in a highly competitive industry.
+              </p>
+              <p style="font-weight: bold">James Thompson - Company Name</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="feedback">
+        <div class="container two-column">
+          <div class="container-item span-column-2">
+            <h2>What Our Clients Say</h2>
+          </div>
+          <div class="container-item">
+            <p class="feedback-author">James Thompson - Company Name</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="feedback-last">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="container-item">
+            <p class="feedback-author">James Thompson - Company Name</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="feedback-last">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="learn-more">
+        <div class="container">
+          <div class="container-item">
+            <h2>Want to learn more?</h2>
+            <p>
+              Find out more about how I can support your technology challenges
+            </p>
+            <a class="button" href="contact.html" aria-label="Home Page"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer">
+        <div class="container three-column background-coloured">
+          <!-- <svg
+            class="logo-svg"
+            style="position: absolute; right: 0; bottom: 0; opacity: 0.2"
+            version="1.0"
+            width="20rem"
+            height="20rem"
+            viewBox="0 0 120.000000 134.000000"
+            preserveAspectRatio="xMidYMid meet"
+            xmlns="http://www.w3.org/2000/svg">
+            <g
+              transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)"
+              stroke="none">
+              <path
+                d="M 930 1270 C 917 1222 867 1162 824 1144 C 807 1137 759 1128 716 1124 L 639 1117 L 642 1046 L 645 975 L 770 974 L 895 974 C 895 974 902 791 902 585 L 900 210 L 876 210 C 857 210 799 264 633 435 L 415 659 L 417 517 L 418 375 L 570 218 L 723 60 L 921 60 L 1120 60 L 1120 685 L 1120 1310 L 1030 1310 L 941 1310 L 930 1270 Z"
+                style="
+                  fill: var(--accent-tertiary);
+                  stroke: var(--accent-tertiary);
+                " />
+              <path
+                d="M 60 570 L 60 60 L 175 60 L 291 60 L 288 505 C 286 805 288 950 295 950 C 301 950 411 844 540 715 C 669 586 775 480 777 480 C 779 480 780 546 780 627 L 780 774 L 628 927 L 476 1080 L 268 1080 L 60 1080 L 60 570 Z"
+                style="
+                  fill: var(--accent-tertiary);
+                  stroke: var(--accent-tertiary);
+                " />
+            </g>
+          </svg>-->
+          <div class="container-item">
+            <h3>Ben Ward</h3>
+            <div>
+              <svg
+                class="logo-svg"
+                version="1.0"
+                width="8rem"
+                height="8rem"
+                viewBox="0 0 225.000000 225.000000"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg">
+                <g
+                  transform="matrix(0.1, 0.000897, 0, -0.1, 0, 223.992218)"
+                  fill="var(--accent-tertiary)"
+                  stroke="none">
+                  <path
+                    d="M 210 1125 L 210 730 L 413 730 C 699 730 792 756 840 850 C 866 901 867 983 841 1030 C 815 1079 746 1120 676 1127 C 616 1133 607.53 1137.282 653 1150 C 716.568 1167.78 796 1203 819 1263 C 858 1364 800 1464 682 1500 C 627 1517 589 1520 414 1520 L 210 1520 L 210 1125 Z M 549 1431 C 573 1430 596.265 1422.171 620.265 1398.171 C 649.265 1369.171 650 1355 650 1316 C 650 1215 603 1180 470 1180 L 390 1180 L 390 1310 L 390 1434.735 L 453 1435 C 487 1433 530 1431 549 1431 Z M 611 1074 C 657 1054 680 1014 680 955 C 680 853 633 820 486 820 L 390 820 L 390 958 L 390 1095 L 482 1092 C 537 1090 590 1083 611 1074 Z" />
+                  <path
+                    d="M 867 1508 C 873 1501 946 1323 1030 1112 L 1182 729 L 1217 732 L 1252 735 L 1395 1116 C 1473 1326 1540 1502 1544 1509 C 1549 1517 1536 1520 1502 1520 L 1453 1520 L 1383 1328 C 1344 1222 1300 1100 1285 1057 C 1270 1014 1256 981 1255 982 C 1253 984 1215 1084 1170 1205 C 1067 1480 1063 1488 1029 1505 C 993 1524 853 1526 867 1508 Z" />
+                  <path
+                    d="M 1860 1288 C 1813 1160 1771 1042 1767 1025 C 1762 1009 1755 992 1752 988 C 1745 981 1590 1384 1590 1408 C 1590 1415 1552 1344 1531 1287 L 1492 1183 L 1583 956 L 1674 729 L 1709 732 L 1743 735 L 1890 1128 L 2038 1520 L 1991 1520 L 1944 1520 L 1860 1288 Z" />
+                </g>
+              </svg>
+            </div>
+            <div class="footer-social-icons">
+              <a
+                href="https://github.com/BenW151"
+                aria-label="Ben Ward Github"
+                target="_blank"
+                class="icon fa-brands fa-github"></a>
+              <a
+                href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
+                aria-label="Ben Ward LinkedIn"
+                target="_blank"
+                class="icon fa-brands fa-linkedin-in"></a>
+              <!--TODO replace icon with non font awesome icon-->
+              <a
+                href="contact.html"
+                aria-label="Contact Us Page"
+                class="icon icon-email"></a>
+            </div>
+          </div>
+
+          <div class="container-item">
+            <h3>Links</h3>
+            <div class="footer-navigation-items">
+              <a
+                class="footer-navigation-item"
+                href="index.html"
+                aria-label="Home Page"
+                >Home</a
+              >
+              <a
+                class="footer-navigation-item"
+                href="about.html"
+                aria-label="Home Page"
+                >Company</a
+              >
+              <a
+                class="footer-navigation-item"
+                href="services.html"
+                aria-label="Home Page"
+                >Services</a
+              >
+              <a
+                class="footer-navigation-item"
+                href="https://www.zendesk.com/"
+                target="_blank"
+                aria-label="Home Page"
+                >Login</a
+              >
+              <a
+                class="footer-navigation-item"
+                href="contact.html"
+                aria-label="Home Page"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <div class="container-item">
+            <h3>Contact</h3>
+            <div class="contact-items">
+              <a href="mailto:myemail@gmail.com" aria-label="Home Page"
+                >myemail@gmail.com</a
+              >
+              <a href="tel:+447000000000" aria-label="Home Page"
+                >+447000 000000</a
+              >
+              <a
+                href="https://maps.app.goo.gl/5w8V8r8cXyQzJz699"
+                target="_blank"
+                aria-label="Address Google Maps">
+                <span>Placeholder</span><br />
+                <span>Kingston House</span><br />
+                <span>Lydiard Fields</span><br />
+                <span>Swindon</span><br />
+                <span>SN5 8UB</span>
+              </a>
+            </div>
+          </div>
+          <div class="container-item span-column-3 copyright">
+            <p>
+              Copyright ©2024 | Designed by
+              <span class="designed-by"
+                ><a href="https://github.com/BenW151" aria-label="Home Page"
+                  >Ben Ward</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
