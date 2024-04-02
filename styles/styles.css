@@ -249,7 +249,7 @@ li {
 }
 
 footer .logo-svg {
-  padding-left: var(--spacing-3);
+  margin-left: var(--spacing-1);
 }
 
 #hero .logo-svg {
@@ -481,8 +481,8 @@ textarea:focus {
 }
 
 .footer-social-icons {
-  margin-top: var(--spacing-4);
-  margin-left: var(--spacing-2);
+  margin-top: var(--spacing-3);
+  margin-left: var(--spacing-1);
 }
 
 .footer-social-icons a {
