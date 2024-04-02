@@ -20,16 +20,45 @@ body {
   --border-radius-box: 5px;
   --font-color-primary: #f2f3f4;
   --font-color-secondary: #323232;
-  --accent-primary: #fbb040;
+  --accent-primary: #d630d6;
   --accent-secondary: #8800ff;
   --accent-tertiary: #f2f3f4;
   --background-primary: #323232;
   --background-secondary: #8800ff;
   --background-opacity: rgba(0, 0, 0, 0.1);
-  --gradient: linear-gradient(
+  --gradient-yellow-purple: linear-gradient(
     90deg,
     #fbb040 0%,
     #ff7208 33.33%,
+    #d630d6 66.67%,
+    #8800ff 100%
+  );
+  --gradient-purple-yellow: linear-gradient(
+    90deg,
+    #8800ff 0%,
+    #d630d6 33.33%,
+    #ff7208 66.67%,
+    #fbb040 100%
+  );
+  --gradient-font-yellow: linear-gradient(
+    to right,
+    var(--font-color-primary),
+    var(--font-color-primary) 33.33333%,
+    #fbb040 66.67%,
+    #ff7208 100%
+  );
+  --gradient-pink-purple: linear-gradient(90deg, #d630d6 0%, #8800ff 100%);
+  --gradient-transparent-purple: linear-gradient(
+    to right,
+    transparent,
+    transparent 33.33333%,
+    #d630d6 66.67%,
+    #8800ff 100%
+  );
+  --gradient-font-purple: linear-gradient(
+    to right,
+    var(--font-color-primary),
+    var(--font-color-primary) 33.33333%,
     #d630d6 66.67%,
     #8800ff 100%
   );
@@ -178,11 +207,10 @@ li {
   background-color: var(--background-secondary);
   padding-bottom: var(--spacing-4);
   border-radius: var(--border-radius-box);
-
 }
 
 .background-gradient {
-  background: var(--gradient);
+  background: var(--gradient-pink-purple);
 }
 
 .background-alt {
@@ -216,8 +244,9 @@ li {
 }
 
 .text-background {
-  background: var(--gradient);
+  background: var(--gradient-yellow-purple);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -267,7 +296,7 @@ nav {
 }
 
 .nav-gradient {
-  background-image: var(--gradient);
+  background-image: var(--gradient-yellow-purple);
   height: var(--spacing-1);
   z-index: 10000;
   position: absolute;
@@ -275,20 +304,35 @@ nav {
   top: 0;
 }
 
-.gradient-hover {
+.hover-gradient-text-fill {
   margin-left: var(--spacing-3);
   text-transform: uppercase;
   white-space: nowrap;
-  color:var(--font-color-primary);
-  background-image:linear-gradient(to right, var(--font-color-primary), var(--font-color-primary) 33.33333%, #d630d6 66.67%,#8800ff 100%);
+  color: var(--font-color-primary);
+  background-image: var(--gradient-font-purple);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 100%;
   background-position: top left;
-  transition:all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.gradient-hover:hover {
+.hover-gradient-text-fill:hover {
+  background-position: top left 100%;
+}
+
+.navigation-items .navigation-item,
+footer a {
+  background-image: var(--gradient-transparent-purple);
+  background-size: 300% 100%;
+  background-position: top left;
+  transition: all 0.4s ease-in-out;
+  border-radius: var(--border-radius-box);
+}
+
+.navigation-items .navigation-item:hover,
+footer a:hover {
   background-position: top left 100%;
 }
 
@@ -312,11 +356,12 @@ nav {
   display: none;
 }
 
-a:focus,
+/*a:focus,
 a:hover {
   border-radius: var(--border-radius-box);
+  background: var(--gradient-pink-purple);
   text-decoration: none;
-}
+}*/
 
 .navigation-item.icon-chevron-right::after {
   display: none;
@@ -481,7 +526,6 @@ textarea:focus {
 .button {
   border-radius: 20px;
   border: none;
-  background-color: var(--accent-tertiary);
   color: var(--font-color-secondary);
   justify-content: center;
   margin: var(--spacing-3);
@@ -492,20 +536,33 @@ textarea:focus {
   align-items: center;
   font-family: var(--font-family-secondary);
   font-size: 1rem;
+  background-image: var(--gradient-font-purple);
+  background-size: 300% 100%;
+  background-position: top left;
+  transition: all 0.4s ease-in-out;
 }
 
 .button-secondary {
-  background: var(--accent-secondary);
   color: var(--font-color-primary);
+  background-image: var(--gradient-purple-yellow);
 }
 
-.button:hover,
-.button.navigation-item:hover {
-  background-color: var(--accent-primary);
+.button-tertiary {
   color: var(--font-color-secondary);
+  background-image: var(--gradient-font-yellow);
+}
+
+.button:hover {
+  color: var(--font-color-primary);
   border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
+  background-position: top left 100%;
+}
+
+.button-secondary:hover,
+.button-tertiary:hover {
+  color: var(--font-color-secondary);
 }
 
 .button.icon-after::after {
@@ -942,10 +999,6 @@ textarea:focus {
   .dropdown-content.show {
     position: relative;
     transition: opacity 0.5s, visibility 0.2s, transform 0.5s;
-  }
-
-  .dropdown-content a {
-    color: var(--font-color-primary);
   }
 
   .container {
