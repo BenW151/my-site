@@ -241,7 +241,7 @@ li {
   display: block;
   opacity: 0;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  position: absolute; 
+  position: absolute;
   width: 80%;
   margin-left: 10%;
   margin-top: var(--spacing-3);
@@ -252,7 +252,7 @@ li {
 .mySlides.active {
   opacity: 1;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  transform: translateX(0%); 
+  transform: translateX(0%);
 }
 
 .prev,
@@ -1134,7 +1134,7 @@ textarea:focus {
   .prev {
     left: calc(var(--spacing-2) * -1);
   }
-  
+
   .next {
     right: calc(var(--spacing-2) * -1);
   }
