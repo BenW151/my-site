@@ -155,7 +155,7 @@ li {
 .container {
   position: relative;
   width: 100%;
-  padding: var(--spacing-5);
+  padding: var(--spacing-5) 72px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -237,29 +237,33 @@ li {
 }
 
 .mySlides {
-  padding: var(--spacing-3);
   display: block;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  position: absolute;
+  max-height: 0;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out, padding 0.5s linear;
+  /*position: absolute;
   width: 80%;
-  margin-left: 10%;
+  margin-left: 10%;*/
   margin-top: var(--spacing-3);
-  left: 0;
-  transform: translateX(10%);
+  /*left: 0;
+  /*transform: translateX(10%);*/
 }
 
 .mySlides.active {
+  padding: var(--spacing-3);
   opacity: 1;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  transform: translateX(0%);
+  height: auto;
+  max-height: 700px;
+  transition: opacity 0.3s ease-in-out 0.3s, max-height 0.3s ease-in-out 0.3s, padding 0s linear;
+  /*transform: translateX(0%);*/
 }
 
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  position: absolute;
+  top: 20rem;
   width: auto;
   margin-top: -30px;
   padding: var(--spacing-3);
@@ -1123,12 +1127,8 @@ textarea:focus {
   }
 
   .mySlides {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  .slideshow-container {
-    height: 450px; /* Adjust based on your slide content */
+    width: 100%;
+    top: 0%;
   }
 
   .prev {
