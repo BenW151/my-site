@@ -211,6 +211,7 @@ li {
 
 .background-gradient {
   background: var(--gradient-pink-purple);
+  border-radius: var(--border-radius-box);
 }
 
 .background-alt {
@@ -268,6 +269,7 @@ li {
   position: absolute;
   width: auto;
   top: 4.5rem;
+  padding: var(--spacing-1);
   color: var(--accent-secondary);
   font-weight: bold;
   font-size: 1.5rem;
@@ -277,16 +279,24 @@ li {
 }
 
 .prev {
-  left: 34.5%;
+  left: 33.5%;
 }
 
 .next {
-  right: 34.5%;
+  right: 33.5%;
 }
 
 .prev:hover,
 .next:hover {
-  color: var(--accent-tertiary);
+  color: var(--accent-primary);
+}
+
+.prev:hover {
+  left: 33%;
+}
+
+.next:hover {
+  right: 33%;
 }
 
 .dot-container {
@@ -814,7 +824,8 @@ textarea:focus {
   display: flex;
   justify-content: center;
   max-width: 100px;
-  margin: 0 auto;
+  margin-right: var(--spacing-1);
+  margin-left: auto;
 }
 
 .icon {
@@ -1077,7 +1088,6 @@ textarea:focus {
     margin-top: auto;
     bottom: 12.5vh;
     z-index: -1;
-    /*TODO fix logo */
     /* display: flex;
     position: relative;
     margin-top: auto;
@@ -1146,11 +1156,19 @@ textarea:focus {
   }
 
   .prev {
-    left: 30%;
+    left: 28%;
   }
   
   .next {
-    right: 30%;
+    right: 28%;
+  }
+
+  .prev:hover {
+    left: 27.5%;
+  }
+  
+  .next:hover {
+    right: 27.5%;
   }
 }
 
