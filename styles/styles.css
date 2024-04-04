@@ -282,7 +282,6 @@ li {
 
 .next {
   right: 34.5%;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover,
@@ -1144,6 +1143,14 @@ textarea:focus {
   .prev,
   .next {
     top: 0;
+  }
+
+  .prev {
+    left: 30%;
+  }
+  
+  .next {
+    right: 30%;
   }
 }
 
