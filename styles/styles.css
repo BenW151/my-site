@@ -865,6 +865,10 @@ textarea:focus {
   content: "\e8f4";
 }
 
+.icon-view:hover::before {
+  content: "\f108";
+}
+
 .icon-clipboard::before {
   content: "\e179";
 }
