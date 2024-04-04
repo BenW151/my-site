@@ -1128,7 +1128,7 @@ textarea:focus {
   }
 
   .slideshow-container {
-    height: 32rem;
+    height: 33rem;
   }
 
   .dot-container {
@@ -1137,7 +1137,7 @@ textarea:focus {
 
   .mySlides {
     width: 90%;
-    top: 0%;
+    top: 5%;
   }
 
   .prev,
