@@ -204,7 +204,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  //var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -213,14 +213,24 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
 
+  // Remove all classes first
   for (i = 0; i < slides.length; i++) {
-    slides[i].className = slides[i].className.replace(" active", "");
+    slides[i].className = slides[i].className
+      .replace(" active", "")
+      .replace(" next-slide", "")
+      .replace(" previous-slide", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  /*for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }*/
-
+  // Set the current slide
   slides[slideIndex - 1].className += " active";
-  //dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " active";
+
+  // Set the next slide
+  var nextSlideIndex = slideIndex % slides.length; // If slideIndex is the last slide, nextSlideIndex will be 0 (first slide)
+  slides[nextSlideIndex].className += " next-slide";
+
+  // Set the previous slide
+  var previousSlideIndex = (slideIndex - 2 + slides.length) % slides.length; // Corrects for underflow (if slideIndex is 1, it becomes the last slide)
+  slides[previousSlideIndex].className += " previous-slide";
 }
