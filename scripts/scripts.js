@@ -120,21 +120,21 @@ function debounce(func, wait, immediate) {
 window.addEventListener("scroll", function () {
   var nav = document.querySelector("nav");
 
-  if (window.innerWidth <= 768) {
+  //if (window.innerWidth <= 768) {
     if (window.scrollY > 0) {
       nav.classList.add("scrolled");
     } else {
       nav.classList.remove("scrolled");
     }
-  }
+  //}
 });
 
-// Confirm site loaded
+//* Site loaded
 window.onload = function () {
   document.body.className += " loaded";
 };
 
-// Counter
+//* Counter
 document.addEventListener("DOMContentLoaded", (event) => {
   const counters = document.querySelectorAll(".counter");
   const animationDuration = 1500; // 5 seconds for the animation
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-//*Slides
+//* Carousel
 var slideIndex = 1;
 
 document.addEventListener("DOMContentLoaded", function () {
