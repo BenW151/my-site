@@ -397,13 +397,8 @@ nav::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgb(50, 50, 50, 0.8);
+  /*background: rgb(50, 50, 50, 0.8);*/
   backdrop-filter: blur(10px);
-}
-
-nav.scrolled .gradient-bar {
-  transform: translateY(-8px);
-  transition: transform 0.1s ease-in-out;
 }
 
 .gradient-bar {
@@ -413,12 +408,6 @@ nav.scrolled .gradient-bar {
   position: relative;
   width: 100%;
   top: 0;
-  transform: translateY(0);
-  transition: transform 0.1s ease-in-out;
-}
-
-nav .gradient-bar {
-  position: absolute;
 }
 
 .hover-gradient-text-fill {
@@ -1001,6 +990,10 @@ a.button {
   .icon-burger.active::after {
     opacity: 1;
     transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  nav::before {
+    background: rgb(50, 50, 50, 0.8);
   }
 
   .navigation-items {
