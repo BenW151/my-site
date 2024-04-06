@@ -121,11 +121,11 @@ window.addEventListener("scroll", function () {
   var nav = document.querySelector("nav");
 
   //if (window.innerWidth <= 768) {
-    if (window.scrollY > 0) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
-    }
+  if (window.scrollY > 0) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
   //}
 });
 
@@ -186,51 +186,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-//* Carousel
-var slideIndex = 1;
-
+//*AOS
 document.addEventListener("DOMContentLoaded", function () {
-  showSlides(slideIndex);
+  var width = window.innerWidth;
+
+  if (width <= 768) {
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  } else if (width > 768 && width <= 1024) {
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  } else {
+    AOS.init();
+  }
 });
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  // Remove all classes first
-  for (i = 0; i < slides.length; i++) {
-    slides[i].className = slides[i].className
-      .replace(" active", "")
-      .replace(" next-slide", "")
-      .replace(" previous-slide", "");
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  // Set the current slide
-  slides[slideIndex - 1].className += " active";
-  dots[slideIndex - 1].className += " active";
-
-  // Set the next slide
-  var nextSlideIndex = slideIndex % slides.length; // If slideIndex is the last slide, nextSlideIndex will be 0 (first slide)
-  slides[nextSlideIndex].className += " next-slide";
-
-  // Set the previous slide
-  var previousSlideIndex = (slideIndex - 2 + slides.length) % slides.length; // Corrects for underflow (if slideIndex is 1, it becomes the last slide)
-  slides[previousSlideIndex].className += " previous-slide";
-}

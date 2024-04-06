@@ -233,95 +233,19 @@ li {
   z-index: 10;
 }
 
-.slideshow-container {
-  position: relative;
-  overflow: hidden;
-  transform-style: preserve-3d;
-}
-
-.mySlides {
-  display: block;
-  opacity: 0;
-  top: 5rem;
-  transition: opacity 0.3s ease-in-out, transform 0.5 ease-in-out;
-  position: absolute;
-  padding: var(--spacing-3);
-  margin-top: var(--spacing-5);
-}
-
-.mySlides.active {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out 0.3s, transform 0.5 ease-in-out;
-  transform: translateX(0%);
-}
-
-.mySlides.next-slide {
-  transform: translateX(100%);
-}
-
-.mySlides.previous-slide {
-  transform: translateX(-100%);
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  top: 4.5rem;
-  padding: var(--spacing-1);
-  color: var(--accent-secondary);
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  z-index: 1000;
-}
-
-.prev {
-  left: 33.5%;
-}
-
-.next {
-  right: 33.5%;
-}
-
-.prev:hover,
-.next:hover {
-  color: var(--accent-primary);
-}
-
-.prev:hover {
-  left: 33%;
-}
-
-.next:hover {
-  right: 33%;
-}
-
-.dot-container {
-  text-align: center;
-  position: relative;
-  margin-top: 4rem;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot.active,
-.dot:hover {
-  background-color: var(--accent-secondary);
-}
-
 .author {
+  display: flex;
+}
+
+.author img {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+  filter: grayscale(100%);
+}
+
+.author h3,
+.author h4 {
   font-weight: bold;
 }
 
@@ -1086,56 +1010,8 @@ a.button {
     grid-column: 1 / span 1;
   }
 
-  .container-item.timeline {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .timeline,
-  .contact-details {
-    width: 100%;
-  }
-
-  .quote-svg {
-    display: none;
-  }
-
   #skills .three-column {
     gap: 3rem;
-  }
-
-  .slideshow-container {
-    height: 33rem;
-  }
-
-  .dot-container {
-    margin-top: 0;
-  }
-
-  .mySlides {
-    width: 90%;
-    top: 5%;
-  }
-
-  .prev,
-  .next {
-    top: 0;
-  }
-
-  .prev {
-    left: 28%;
-  }
-
-  .next {
-    right: 28%;
-  }
-
-  .prev:hover {
-    left: 27.5%;
-  }
-
-  .next:hover {
-    right: 27.5%;
   }
 }
 
