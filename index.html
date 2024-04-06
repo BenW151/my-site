@@ -88,21 +88,18 @@
 
   <body>
     <nav>
-      <h2 class="logo hover-gradient-text-fill">
+      <h2 class="logo hover-underline">
         <a href="index.html" aria-label="Home Page">Ben Ward</a>
       </h2>
       <div
         class="burger-menu icon-after icon-before icon-burger"
         onclick="toggleMenu()"></div>
-      <div class="navigation-items hover-gradient-background-fill">
-        <a
-          class="navigation-item icon-after icon-chevron-right"
-          href="index.html"
-          aria-label="Home Page"
+      <div class="navigation-items hover-underline">
+        <a class="navigation-item" href="index.html" aria-label="Home Page"
           >Home</a
         >
         <a
-          class="navigation-item icon-after icon-chevron-right"
+          class="navigation-item"
           href="#about"
           onclick="toggleMenu()"
           aria-label="Home Page"
@@ -110,65 +107,29 @@
         >
         <!--TODO Replace onclick events with js-->
         <a
-          class="navigation-item icon-after icon-chevron-right"
+          class="navigation-item"
           href="#skills"
           onclick="toggleMenu()"
           aria-label="Home Page"
           >Skills</a
         >
-        <div class="dropdown">
-          <a
-            id="navDropdown1"
-            class="dropbtn navigation-item icon-after icon-chevron-right"
-            data-dropdown="myDropdown1"
-            >Services</a
-          >
-          <div id="myDropdown1" class="dropdown-content">
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="#services"
-              onclick="toggleMenu()"
-              aria-label="Home Page"
-              >Front End Development</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="#services"
-              onclick="toggleMenu()"
-              aria-label="Home Page"
-              >UI/UX Design</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="#services"
-              onclick="toggleMenu()"
-              aria-label="Home Page"
-              >Brand Design</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="#services"
-              onclick="toggleMenu()"
-              aria-label="Home Page"
-              >SEO</a
-            >
-            <a
-              class="navigation-item icon-after icon-chevron-right"
-              href="#services"
-              onclick="toggleMenu()"
-              aria-label="Home Page"
-              >On-Demand Support</a
-            >
-          </div>
-        </div>
+        <a class="navigation-item" href="#services" data-dropdown="myDropdown1"
+          >Services</a
+        >
         <a
-          class="navigation-item icon-after icon-chevron-right"
+          class="navigation-item"
           href="#projects"
           onclick="toggleMenu()"
           aria-label="Home Page"
           >Projects</a
         >
-        <a class="button" href="#contact">Contact Me</a>
+        <a
+          class="navigation-item"
+          href="#contact"
+          onclick="toggleMenu()"
+          aria-label="Home Page"
+          >Contact</a
+        >
         <svg
           class="logo-svg"
           version="1.0"
@@ -179,7 +140,7 @@
           xmlns="http://www.w3.org/2000/svg">
           <g
             transform="matrix(0.1, 0.000897, 0, -0.1, 0, 223.992218)"
-            fill="var(--accent-tertiary)"
+            fill="var(--accent-primary)"
             stroke="none">
             <path
               d="M 210 1125 L 210 730 L 413 730 C 699 730 792 756 840 850 C 866 901 867 983 841 1030 C 815 1079 746 1120 676 1127 C 616 1133 607.53 1137.282 653 1150 C 716.568 1167.78 796 1203 819 1263 C 858 1364 800 1464 682 1500 C 627 1517 589 1520 414 1520 L 210 1520 L 210 1125 Z M 549 1431 C 573 1430 596.265 1422.171 620.265 1398.171 C 649.265 1369.171 650 1355 650 1316 C 650 1215 603 1180 470 1180 L 390 1180 L 390 1310 L 390 1434.735 L 453 1435 C 487 1433 530 1431 549 1431 Z M 611 1074 C 657 1054 680 1014 680 955 C 680 853 633 820 486 820 L 390 820 L 390 958 L 390 1095 L 482 1092 C 537 1090 590 1083 611 1074 Z" />
@@ -195,9 +156,6 @@
     <main>
       <section id="hero">
         <div class="container two-column">
-          <video playsinline autoplay muted loop class="fade-in">
-            <source src="images/background-video.mp4" type="video/mp4" />
-          </video>
           <div class="hero-text container-item fade-in">
             <h1>Ben Ward</h1>
             <h2 style="font-size: 1.5rem">Web Developer</h2>
@@ -217,7 +175,7 @@
               xmlns="http://www.w3.org/2000/svg">
               <g
                 transform="matrix(0.1, 0.000897, 0, -0.1, 0, 223.992218)"
-                fill="var(--accent-tertiary)"
+                fill="var(--accent-primary)"
                 stroke="none">
                 <path
                   d="M 210 1125 L 210 730 L 413 730 C 699 730 792 756 840 850 C 866 901 867 983 841 1030 C 815 1079 746 1120 676 1127 C 616 1133 607.53 1137.282 653 1150 C 716.568 1167.78 796 1203 819 1263 C 858 1364 800 1464 682 1500 C 627 1517 589 1520 414 1520 L 210 1520 L 210 1125 Z M 549 1431 C 573 1430 596.265 1422.171 620.265 1398.171 C 649.265 1369.171 650 1355 650 1316 C 650 1215 603 1180 470 1180 L 390 1180 L 390 1310 L 390 1434.735 L 453 1435 C 487 1433 530 1431 549 1431 Z M 611 1074 C 657 1054 680 1014 680 955 C 680 853 633 820 486 820 L 390 820 L 390 958 L 390 1095 L 482 1092 C 537 1090 590 1083 611 1074 Z" />
@@ -232,7 +190,6 @@
       </section>
 
       <section id="about">
-        <div class="gradient-bar"></div>
         <div class="container two-column">
           <div class="container-item">
             <h2>About Me</h2>
@@ -272,7 +229,7 @@
       </section>
 
       <section id="skills" data-aos="fade-up">
-        <div class="container two-column background-alt">
+        <div class="container two-column">
           <div class="container-item three-column">
             <div class="skill-wrap col-1">
               <span><i class="fa-brands fa-js"></i></span
@@ -319,46 +276,34 @@
         <div class="container three-column">
           <div class="container-item">
             <h2>Services</h2>
-            <p>
-              What I Can Offer
-            </p>
+            <p>What I Can Offer</p>
           </div>
           <div class="container-item blur-box">
             <h3>Development</h3>
-            <p>
-              Products with clean code & cutting-edge tools
-            </p>
+            <p>Products with clean code & cutting-edge tools</p>
           </div>
           <div class="container-item blur-box">
             <h3>UI/UX Design</h3>
-            <p>
-              Captivating UI for your websites & products
-            </p>
+            <p>Captivating UI for your websites & products</p>
           </div>
           <div class="container-item blur-box">
             <h3>Brand Design</h3>
-            <p>
-              Captivating UI for your websites & products
-            </p>
+            <p>Captivating UI for your websites & products</p>
           </div>
           <div class="container-item blur-box">
             <h3>SEO</h3>
-            <p>
-              Skyrocket your search engine visibility
-            </p>
+            <p>Skyrocket your search engine visibility</p>
           </div>
           <div class="container-item blur-box">
             <h3>Support</h3>
-            <p>
-              Reliable support, whenever you need it
-            </p>
+            <p>Reliable support, whenever you need it</p>
           </div>
         </div>
       </section>
 
       <section id="projects">
         <div
-          class="container four-column background-alt"
+          class="container four-column"
           data-aos="fade-up"
           data-aos-delay="500">
           <div class="container-item">
@@ -389,12 +334,6 @@
                 aria-label="Home Page"></a>
             </h3>
             <h4>Tour Operator</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
           </div>
           <div class="container-item team-member">
             <div class="team-member-image">
@@ -408,12 +347,6 @@
                 aria-label="Home Page"></a>
             </h3>
             <h4>IT Services</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
           </div>
           <div class="container-item team-member">
             <div class="team-member-image">
@@ -427,62 +360,6 @@
                 aria-label="Home Page"></a>
             </h3>
             <h4>Travel Blog</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="stats">
-        <div class="container three-column background-alt">
-          <div class="container-item span-column-3">
-            <h2>Stats</h2>
-          </div>
-          <div class="container-item blur-box two-column" data-aos="fade-up">
-            <div class="container-item">
-              <h3 class="counter" data-num="75"></h3>
-              <p>Project Completed</p>
-            </div>
-            <div class="container-item icon-before icon-wifi"></div>
-          </div>
-          <div class="container-item blur-box two-column" data-aos="fade-up">
-            <div class="container-item">
-              <h3 class="counter" data-num="100" data-is-percentage="true"></h3>
-              <p>Customer Satisfaction</p>
-            </div>
-            <div class="container-item icon-before icon-clipboard"></div>
-          </div>
-          <div class="container-item blur-box two-column" data-aos="fade-up">
-            <div class="container-item">
-              <h3 class="counter" data-num="5432"></h3>
-              <p>Lines Of Code</p>
-            </div>
-            <div class="container-item icon-before icon-code"></div>
-          </div>
-          <div class="container-item blur-box two-column" data-aos="fade-up">
-            <div class="container-item">
-              <h3 class="counter" data-num="512"></h3>
-              <p>Call Outs</p>
-            </div>
-            <div class="container-item icon-before icon-support"></div>
-          </div>
-          <div class="container-item blur-box two-column" data-aos="fade-up">
-            <div class="container-item">
-              <h3 class="counter" data-num="243"></h3>
-              <p>Satisfied Customers</p>
-            </div>
-            <div class="container-item icon-before icon-person-add"></div>
-          </div>
-          <div class="container-item blur-box two-column" data-aos="fade-up">
-            <div class="container-item">
-              <h3 class="counter" data-num="53"></h3>
-              <p>Decomissions</p>
-            </div>
-            <div class="container-item icon-before icon-wifi"></div>
           </div>
         </div>
       </section>
@@ -573,8 +450,9 @@
             </div>
           </div>
 
-          <div class="container-item contact-details background-alt" data-aos="fade-up"
-          >
+          <div
+            class="container-item contact-details blur-box"
+            data-aos="fade-up">
             <h3>Contact Details</h3>
             <div class="contact-items hover-gradient-background-fill">
               <h3 class="icon-before icon-email">Email</h3>
@@ -598,7 +476,7 @@
       </section>
 
       <section id="learn-more">
-        <div class="container background-gradient text-center-align">
+        <div class="container text-center-align">
           <div class="container-item">
             <h2>Want to learn more?</h2>
             <p>
@@ -617,26 +495,10 @@
 
     <footer>
       <div id="footer">
-        <div class="container three-column hover-gradient-background-fill">
+        <div class="marquee" data-text="Get In Touch.">Get In Touch.</div>
+        <div class="container grid">
           <div class="container-item">
             <h3>Ben Ward</h3>
-            <div class="footer-social-icons">
-              <a
-                href="https://github.com/BenW151"
-                aria-label="Ben Ward Github"
-                target="_blank"
-                class="icon fa-brands fa-github"></a>
-              <a
-                href="https://www.linkedin.com/in/ben-ward-5523ab15a/"
-                aria-label="Ben Ward LinkedIn"
-                target="_blank"
-                class="icon fa-brands fa-linkedin-in"></a>
-              <!--TODO replace icon with non font awesome icon-->
-              <a
-                href="contact.html"
-                aria-label="Contact Page"
-                class="icon icon-email"></a>
-            </div>
             <div>
               <svg
                 class="logo-svg"
@@ -648,7 +510,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <g
                   transform="matrix(0.1, 0.000897, 0, -0.1, 0, 223.992218)"
-                  fill="var(--accent-tertiary)"
+                  fill="var(--accent-primary)"
                   stroke="none">
                   <path
                     d="M 210 1125 L 210 730 L 413 730 C 699 730 792 756 840 850 C 866 901 867 983 841 1030 C 815 1079 746 1120 676 1127 C 616 1133 607.53 1137.282 653 1150 C 716.568 1167.78 796 1203 819 1263 C 858 1364 800 1464 682 1500 C 627 1517 589 1520 414 1520 L 210 1520 L 210 1125 Z M 549 1431 C 573 1430 596.265 1422.171 620.265 1398.171 C 649.265 1369.171 650 1355 650 1316 C 650 1215 603 1180 470 1180 L 390 1180 L 390 1310 L 390 1434.735 L 453 1435 C 487 1433 530 1431 549 1431 Z M 611 1074 C 657 1054 680 1014 680 955 C 680 853 633 820 486 820 L 390 820 L 390 958 L 390 1095 L 482 1092 C 537 1090 590 1083 611 1074 Z" />
@@ -661,51 +523,8 @@
             </div>
           </div>
 
-          <div class="container-item">
-            <h3>Links</h3>
-            <div class="footer-navigation-items">
-              <a
-                class="footer-navigation-item"
-                href="index.html"
-                aria-label="Home Page"
-                >Home</a
-              >
-              <a
-                class="footer-navigation-item"
-                href="#about"
-                aria-label="Home Page"
-                >About</a
-              >
-              <a
-                class="footer-navigation-item"
-                href="#skills"
-                aria-label="Home Page"
-                >Skills</a
-              >
-              <a
-                class="footer-navigation-item"
-                href="#services"
-                aria-label="Home Page"
-                >Services</a
-              >
-              <a
-                class="footer-navigation-item"
-                href="#projects"
-                aria-label="Home Page"
-                >Projects</a
-              >
-              <a
-                class="footer-navigation-item"
-                href="#contact"
-                aria-label="Home Page"
-                >Contact Me</a
-              >
-            </div>
-          </div>
-
-          <div class="container-item">
-            <h3>Contact</h3>
-            <div class="contact-items">
+          <div class="container-item footer-contact hover-underline">
+            <div class="contact-items hover-underline">
               <a href="mailto:myemail@gmail.com" aria-label="Home Page"
                 >myemail@gmail.com</a
               >
@@ -714,15 +533,48 @@
               >
             </div>
           </div>
-          <div class="container-item span-column-3 copyright">
-            <p>
-              Copyright ©2024 | Designed by
-              <span class="designed-by"
-                ><a href="https://github.com/BenW151" aria-label="Home Page"
-                  >Ben Ward</a
-                ></span
-              >
-            </p>
+
+          <div class="container-item footer-socials hover-underline">
+            <a
+              class="footer-contact-item"
+              href="https://github.com/BenW151"
+              aria-label="Ben Ward Github"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              class="footer-contact-item"
+              href="https://github.com/BenW151"
+              aria-label="Ben Ward linkedin"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="footer-contact-item"
+              href="https://github.com/BenW151"
+              aria-label="Ben Ward linkedin"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+
+          <div class="container-item footer-end hover-underline">
+            <p>Copyright ©2024</p>
+            <a
+              class="footer-navigation-item"
+              href="index.html"
+              aria-label="Home Page"
+              >Privacy Policy</a
+            >
+            <a
+              class="footer-navigation-item"
+              href="#about"
+              aria-label="Home Page"
+              >Terms and Conditions</a
+            >
+            <a href="https://github.com/BenW151" aria-label="Home Page"
+              >Designed by Ben Ward</a
+            >
           </div>
         </div>
       </div>
