@@ -181,16 +181,19 @@ li {
 .two-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-3);
 }
 
 .three-column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-3);
 }
 
 .four-column {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-3);
 }
 
 .span-column-2 {
@@ -229,8 +232,15 @@ li {
   backdrop-filter: blur(2px);
   box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
   border-radius: var(--border-radius-box);
+  width: 100%;
   margin: auto;
   z-index: 10;
+}
+
+#services .blur-box {
+  height: 12.5rem;
+  width: 100%;
+  padding: var(--spacing-4);
 }
 
 .author {
