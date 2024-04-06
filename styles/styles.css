@@ -170,6 +170,10 @@ li {
   margin: auto;
 }
 
+.marquee-wrap {
+  overflow: hidden;
+}
+
 .marquee {
   --space: 4vw;
 
@@ -365,6 +369,7 @@ nav::before {
   margin-left: var(--spacing-3);
   text-transform: uppercase;
   white-space: nowrap;
+  margin: 0;
 }
 
 .text-gradient-background {
@@ -836,6 +841,29 @@ a.button {
     color: var(--accent-primary);
   }
 
+  .grid, .grid.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2.3333333333vw;
+  }
+
+  .footer-socials {
+    grid-column: 5/7;
+    grid-row-start: 2;
+  }
+
+  .footer-contact {
+    grid-column: 1/4;
+    grid-row-start: 2;
+  }
+
+  .footer-end {
+    display: inline-flex;
+    flex-direction: column;
+    grid-row-start: 3;
+    grid-column: 1 / span 16;
+  }
+
   #hero {
     padding-top: 0;
   }
@@ -917,7 +945,7 @@ a.button {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: calc(42px + 3 * (var(--spacing-1)));
+    top: 51px;
     background: rgb(50, 50, 50, 0.8);
     backdrop-filter: blur(10px);
     width: 100%;
