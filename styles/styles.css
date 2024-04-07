@@ -343,17 +343,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: none;
-}
-
-nav::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /*background: rgb(50, 50, 50, 0.8);*/
-  backdrop-filter: blur(10px);
+  background: var(--background-primary);
 }
 
 .gradient-bar {
@@ -367,7 +357,6 @@ nav::before {
 
 .logo {
   margin-left: var(--spacing-3);
-  text-transform: uppercase;
   white-space: nowrap;
   margin: 0;
 }
@@ -896,6 +885,10 @@ a.button {
     margin: auto;
     margin-right: var(--spacing-3);
     align-items: center;
+    padding: 24px;
+    color: black;
+    background-color: white;
+    border-radius: 100%;
   }
 
   .icon-burger {
@@ -937,25 +930,21 @@ a.button {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 
-  nav::before {
-    background: rgb(50, 50, 50, 0.8);
-  }
-
   .navigation-items {
     flex-direction: column;
     position: absolute;
     left: 0;
     top: 51px;
-    background: rgb(50, 50, 50, 0.8);
-    backdrop-filter: blur(10px);
+    background: var(--background-primary);
     width: 100%;
     height: 100vh;
     padding: 0;
-    z-index: 1000;
+    z-index: -1;
     align-items: center;
     justify-content: flex-start;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     transition: transform 0.3s ease-out;
+    padding-top: 33%;
   }
 
   .navigation-item {
@@ -967,9 +956,10 @@ a.button {
   .navigation-items a {
     width: 85vw;
     display: flex;
+    font-size: 3rem;
     margin: 0;
     align-items: center;
-    justify-content: center;
+    padding-bottom: 0;
   }
 
   a.navigation-item:focus,
@@ -980,7 +970,9 @@ a.button {
   }
 
   .navigation-items.nav-open {
-    transform: translateX(0);
+    transform: translateY(0);
+    transition: transform 0.3s ease-out 0.1s;
+
   }
 
   .navigation-item.icon-chevron-right:after {
@@ -999,6 +991,7 @@ a.button {
     position: absolute;
     margin-top: auto;
     bottom: 12.5vh;
+    left: calc(2 * var(--spacing-3));
     z-index: -1;
     /* display: flex;
     position: relative;
