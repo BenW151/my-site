@@ -333,31 +333,30 @@ footer .container-item {
 }
 
 .logo a {
-  max-width: 100px;
   padding-right: 0;
   display: inline-block;
-  max-width: 200px;
+  max-width: 0;
   overflow: hidden;
   white-space: nowrap;
-  transition: max-width 0.7s ease-in-out 0.3s;
-}
-
-nav.scrolled .logo a {
-  max-width: 0;
   transition: max-width 0.7s ease-in-out;
 }
 
+nav.scrolled .logo a {
+  max-width: 200px;
+  transition: max-width 0.7s ease-in-out 0.3s;
+}
+
 .logo img {
-  opacity: 0;
+  opacity: 1;
   width: 4rem;
   height: 4rem;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out 0.7s;
   position: absolute;
 }
 
 nav.scrolled .logo img {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out 0.7s;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .logo-svg {
@@ -475,6 +474,10 @@ nav {
   background-color: var(--font-color-primary);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+.hover-underline.logo a::after {
+  width: 100%;
 }
 
 .hover-underline a:hover::after {
