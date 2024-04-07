@@ -178,7 +178,6 @@ li {
   display: none;
 }
 
-
 .footer-end {
   align-items: center;
   justify-content: space-between;
@@ -229,23 +228,19 @@ footer .container-item {
 }
 
 .marquee {
-
-    font-size: 15vw;
-    padding-right: 0.25em;
-    animation: marqueeLoop 5s infinite linear;      
-
+  font-size: 15vw;
+  padding-right: 0.25em;
+  animation: marqueeLoop 5s infinite linear;
 }
 
 @keyframes marqueeLoop {
-
-from {
+  from {
     transform: translateX(0);
- }
+  }
 
-to {
+  to {
     transform: translateX(-100%);
- }
-
+  }
 }
 
 .two-column {
@@ -329,6 +324,42 @@ to {
   font-weight: bold;
 }
 
+.logo {
+  white-space: nowrap;
+  margin: 0;
+  margin-left: var(--spacing-3);
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  max-width: 100px;
+  padding-right: 0;
+  display: inline-block;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.7s ease-in-out 0.3s;
+}
+
+nav.scrolled .logo a {
+  max-width: 0;
+  transition: max-width 0.7s ease-in-out;
+}
+
+.logo img {
+  opacity: 0;
+  width: 4rem;
+  height: 4rem;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+}
+
+nav.scrolled .logo img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.7s;
+}
+
 .logo-svg {
   margin: 0;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
@@ -404,12 +435,6 @@ nav {
   position: relative;
   width: 100%;
   top: 0;
-}
-
-.logo {
-  margin-left: var(--spacing-3);
-  white-space: nowrap;
-  margin: 0;
 }
 
 .name {
@@ -1064,7 +1089,9 @@ a.button {
     z-index: -1;*/
   }
 
-  .container.two-column, .container.three-column, .container.four-column {
+  .container.two-column,
+  .container.three-column,
+  .container.four-column {
     grid-template-columns: 1fr;
     padding: var(--spacing-4);
   }
@@ -1103,15 +1130,15 @@ a.button {
   .footer-end .item:nth-child(1) {
     display: none;
   }
-  
+
   .footer-end .item:nth-child(2) {
     grid-column: 1 / 5;
   }
-  
+
   .footer-end .item:nth-child(3) {
     display: none;
   }
-  
+
   .footer-end .item:nth-child(4) {
     grid-column: 1 / 5;
   }
@@ -1119,7 +1146,9 @@ a.button {
 
 /* Responsive design for tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .container.two-column, .container.three-column, .container.four-column {
+  .container.two-column,
+  .container.three-column,
+  .container.four-column {
     grid-template-columns: repeat(2, 1fr);
   }
 }
