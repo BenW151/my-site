@@ -194,7 +194,7 @@ nav .card {
   height: 1px;
   top: 5px;
   left: 5%;
-  background-color: var(--font-color-primary);
+  background-color: var(--font-color-secondary);
 }
 
 footer .container-item {
@@ -224,9 +224,9 @@ footer .container-item {
 
 footer {
   position: relative;
-  z-index: -1; /* Below the learn more section */
-  transform: translateY(-12rem); /* Initially hidden below */
-  transition: transform 0.5s ease-out; /* Smooth transition for reveal */
+  z-index: -1;
+  transform: translateY(-12rem);
+  transition: transform 0.5s linear;
 }
 
 #learn-more {
@@ -277,6 +277,14 @@ footer {
 .background-inverted {
   background-color: var(--background-secondary);
   color: var(--font-color-secondary);
+}
+
+.background-inverted a {
+  color: var(--font-color-secondary);
+}
+
+.background-inverted .hover-underline a::after {
+  background-color: var(--font-color-secondary);
 }
 
 .text-center-align,
@@ -623,7 +631,6 @@ a.button-inverted:hover {
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
-
   html {
     scroll-behavior: auto;
   }

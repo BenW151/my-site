@@ -206,20 +206,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //* Scroll Load Bar
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
 //* Parallax
-document.addEventListener('DOMContentLoaded', (event) => {
-  window.addEventListener('scroll', () => {
-    const footer = document.querySelector('footer');
-    const scrollableDistance = document.documentElement.scrollHeight - window.innerHeight;
+document.addEventListener("DOMContentLoaded", (event) => {
+  window.addEventListener("scroll", () => {
+    const footer = document.querySelector("footer");
+    const scrollableDistance =
+      document.documentElement.scrollHeight - window.innerHeight;
     const footerHeight = footer.clientHeight;
     const revealStartPoint = scrollableDistance - footerHeight;
 
@@ -228,14 +233,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (scrolled >= revealStartPoint) {
       let offset = scrolled - revealStartPoint;
       let percentage = Math.min(offset / footerHeight, 1);
-      let translateY = -12 + (percentage * 12); 
+      let translateY = -12 + percentage * 12;
 
       footer.style.transform = `translateY(${translateY}rem)`;
 
       document.body.style.paddingBottom = `${12 - translateY}rem`;
     } else {
-      footer.style.transform = 'translateY(-12rem)';
-      document.body.style.paddingBottom = '0';
+      footer.style.transform = "translateY(-12rem)";
+      document.body.style.paddingBottom = "0";
     }
   });
 });
