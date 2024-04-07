@@ -251,5 +251,8 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("toggleDarkMode")
     .addEventListener("click", function () {
       document.body.classList.toggle("light-mode");
+      var icon = document.getElementById("theme-icon");
+      icon.classList.toggle("fa-sun");
+      icon.classList.toggle("fa-moon");
     });
 });
