@@ -326,6 +326,7 @@ nav.scrolled .logo a {
   opacity: 1;
   width: 4rem;
   height: 4rem;
+  margin-left: var(--spacing-3);
   transition: opacity 0.3s ease-in-out 0.7s;
   position: absolute;
 }
@@ -600,6 +601,7 @@ a.button-inverted:hover {
 
   .logo {
     color: var(--accent-primary);
+    margin-left: 0;
   }
 
   .container {
@@ -744,6 +746,7 @@ a.button-inverted:hover {
     padding: var(--spacing-2) 0;
     margin: 0;
     font-size: 1rem;
+    font-family: var(--font-family-primary);
   }
 
   .navigation-items a {
