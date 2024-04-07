@@ -593,6 +593,11 @@ a.button-inverted:hover {
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
   .logo {
     color: var(--accent-primary);
   }
