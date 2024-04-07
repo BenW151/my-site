@@ -244,3 +244,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 });
+
+//* light mode toggle
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("toggleDarkMode")
+    .addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+    });
+});

@@ -29,6 +29,15 @@ body {
   --font-family-secondary: "PT Sans", sans-serif;
 }
 
+.dark-mode {
+  --font-color-primary: #1d1d1c;
+  --font-color-secondary: #f2f3f4;
+  --accent-primary: #1d1d1c;
+  --accent-secondary: #f2f3f4;
+  --background-primary: #f2f3f4;
+  --background-secondary: #1d1d1c;
+}
+
 * {
   transition-property: all;
   transition-timing-function: linear;
@@ -557,6 +566,16 @@ a.button-inverted {
 a.button-inverted:hover {
   color: var(--font-color-primary);
   background-color: var(--accent-secondary);
+}
+
+.dark-mode-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--accent-secondary);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
 }
 
 #skills i {
