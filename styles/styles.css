@@ -159,6 +159,10 @@ li {
   grid-row-start: 2;
 }
 
+.nav-contact {
+  display: none;
+}
+
 .footer-end {
   display: inline-flex;
   flex-direction: row;
@@ -267,8 +271,8 @@ li {
 }
 
 .author img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   margin: 1rem;
   filter: grayscale(100%);
 }
@@ -805,7 +809,6 @@ a.button {
   padding: var(--spacing-1) 0 0 0;
   color: var(--font-color-primary);
   margin: auto;
-  margin-top: var(--spacing-1);
   font-size: 1rem;
   text-align: center;
   opacity: 0;
@@ -851,6 +854,17 @@ a.button {
     flex-direction: column;
     grid-row-start: 3;
     grid-column: 1 / span 16;
+  }
+
+  .nav-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-5);
+    margin-left: 80vw;
+  }
+
+  .navigation-items .nav-contact a {
+    font-size: 1rem;
   }
 
   #hero {
