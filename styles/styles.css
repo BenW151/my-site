@@ -63,7 +63,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 6rem;
   letter-spacing: 0.27px;
 }
 
@@ -164,13 +164,13 @@ li {
 .footer-card {
   display: flex;
   flex-direction: row;
-  grid-column: 4 / 9;
+  grid-column: 4 / 10;
 }
 
 .footer-card img {
   margin: auto;
-  width: auto;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   filter: grayscale(100%);
 }
 
@@ -222,30 +222,30 @@ footer .container-item {
 }
 
 .marquee-wrap {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
   overflow: hidden;
 }
 
 .marquee {
-  --space: 4vw;
 
-  font-size: 15vw;
-  white-space: nowrap;
-  animation: marquee 6.5s infinite linear;
-  padding-left: var(--spacing-3);
+    font-size: 15vw;
+    padding-right: 0.25em;
+    animation: marqueeLoop 5s infinite linear;      
 
-  &:after {
-    content: attr(data-text);
-    padding-left: var(--spacing-3);
-  }
 }
 
-@keyframes marquee {
-  0% {
+@keyframes marqueeLoop {
+
+from {
     transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+ }
+
+to {
+    transform: translateX(-100%);
+ }
+
 }
 
 .two-column {
@@ -356,7 +356,7 @@ footer .logo-svg {
 
 .hero-text {
   margin: auto;
-  transition: none;
+  margin-top: 15vh;
 }
 
 video {
@@ -414,6 +414,17 @@ nav {
 
 .name {
   text-wrap: nowrap;
+  margin: 0;
+  font-weight: bold;
+}
+
+.role {
+  margin: 0;
+}
+
+.italic {
+  margin: 0;
+  font-style: italic;
 }
 
 .text-gradient-background {
@@ -919,6 +930,7 @@ a.button {
   .hero-text {
     width: 100%;
     max-width: 100%;
+    margin-top: 25vh;
   }
 
   .hero-image {
