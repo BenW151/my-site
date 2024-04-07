@@ -29,7 +29,7 @@ body {
   --font-family-secondary: "PT Sans", sans-serif;
 }
 
-.dark-mode {
+.light-mode {
   --font-color-primary: #1d1d1c;
   --font-color-secondary: #f2f3f4;
   --accent-primary: #1d1d1c;
@@ -494,6 +494,10 @@ nav {
 
 .navigation-items .logo-svg {
   display: none;
+}
+
+.light-mode .logo-svg {
+  filter: invert(100%);
 }
 
 input,
