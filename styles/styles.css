@@ -241,6 +241,7 @@ footer {
 
 #learn-more {
   z-index: 100;
+  background-color: var(--accent-secondary)
 }
 
 .marquee-wrap {
@@ -388,14 +389,12 @@ nav.scrolled .logo img {
 }
 
 #hero .container {
-  padding-top: 76px;
-  max-height: 818px;
   height: 100vh;
 }
 
 .hero-text {
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 
 .hero-text h1 {
@@ -585,6 +584,7 @@ a.button-inverted:hover {
   height: 2rem;
   padding: 20px;
   border-radius: 100%;
+  z-index: -1;
 }
 
 #skills i {
