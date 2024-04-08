@@ -541,6 +541,7 @@ a.button {
   border-radius: 20px;
   border: 1px solid var(--font-color-primary);
   color: var(--font-color-primary);
+  background: var(--background-primary);
   justify-content: center;
   margin: var(--spacing-3);
   display: flex;
@@ -550,7 +551,6 @@ a.button {
   align-items: center;
   font-family: var(--font-family-secondary);
   font-size: 1rem;
-  background: transparent;
   transition: all 0.4s ease-in-out;
 }
 
@@ -563,23 +563,27 @@ a.button {
   background-position: top left 100%;
 }
 
+.button-inverted,
 a.button-inverted {
   color: var(--font-color-secondary);
+  background: var(--background-secondary);
   border: 1px solid var(--font-color-secondary);
 }
 
+.button-inverted:hover,
 a.button-inverted:hover {
   color: var(--font-color-primary);
-  background-color: var(--accent-secondary);
+  background: var(--background-primary);
+  border: 1px solid var(--font-color-secondary);
 }
 
 .dark-mode-button {
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: var(--accent-secondary);
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 20px;
   border-radius: 100%;
 }
 
@@ -662,6 +666,8 @@ a.button-inverted:hover {
   .logo {
     color: var(--accent-primary);
     margin-left: 0;
+    margin-top: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
   }
 
   .container {
@@ -738,6 +744,8 @@ a.button-inverted:hover {
   .burger-menu {
     cursor: pointer;
     margin: auto;
+    margin-top: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
     margin-right: var(--spacing-3);
     align-items: center;
     padding: 20px;
