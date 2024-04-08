@@ -192,12 +192,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (width <= 768) {
     AOS.init({
-      offset: 400,
+      offset: 200,
       duration: 1000,
     });
   } else if (width > 768 && width <= 1024) {
     AOS.init({
-      offset: 400,
+      offset: 200,
       duration: 1000,
     });
   } else {
