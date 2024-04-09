@@ -342,6 +342,10 @@ body.loaded .hero-text a {
   }
 }
 
+#lead-text .container {
+  margin-bottom: 8rem
+}
+
 /*TODO clean up below*/
 #services .container-item,
 #projects .container-item {
@@ -354,6 +358,7 @@ body.loaded .hero-text a {
 #projects .grid,
 #testimonials .grid,
 #about .grid,
+#lead-text .grid,
 #skills .grid {
   text-wrap: wrap;
 }
@@ -451,6 +456,10 @@ body.loaded .hero-text a {
 
 #skills .container-item:nth-child(2) {
   grid-column: 8/ 17;
+}
+
+#lead-text .container-item:nth-child(1) {
+  grid-column: 2 / 16;
 }
 
 .author {
@@ -660,7 +669,7 @@ textarea:focus {
 }
 
 .contact-details {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -950,6 +959,7 @@ a.button-inverted:hover {
     margin: 0;
     font-size: 1rem;
     font-family: var(--font-family-primary);
+    transition: transform 0.5s ease-in-out;
   }
 
   .navigation-items a {
@@ -970,7 +980,7 @@ a.button-inverted:hover {
 
   .navigation-items.nav-open {
     transform: translateY(0);
-    transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-in-out;
   }
 
   .navigation-item.icon-chevron-right:after {
@@ -1133,6 +1143,15 @@ a.button-inverted:hover {
   #skills .container-item:nth-child(2) {
     grid-column: 1 / 7;
     grid-row-start: 2;
+  }
+
+  #lead-text .container-item:nth-child(1) {
+  grid-column: 1 / 7;
+}
+
+  .contact-details {
+    width: 100%;
+    margin: auto;
   }
 }
 
