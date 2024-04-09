@@ -361,7 +361,6 @@ body.loaded .hero-text a {
 #services .container-item:nth-child(1) {
   grid-column: 2 / 8;
   grid-row-start: 1;
-
 }
 
 /*#services .container-item:nth-child(1) p::before {
@@ -400,21 +399,21 @@ body.loaded .hero-text a {
 }
 
 #projects .container-item:nth-child(1) {
-  grid-column: 1 / 5;
+  grid-column: 1 / 7;
 }
 
 #projects .container-item:nth-child(2) {
-  grid-column: 5/ 9;
+  grid-column: 9 / 16;
 }
 
 #projects .container-item:nth-child(3) {
-  grid-column: 9 / 13;
-  /*grid-row-start: 2;*/
+  grid-column: 9 / 16;
+  grid-row-start: 2;
 }
 
 #projects .container-item:nth-child(4) {
-  grid-column: 13 / 17;
-  /*grid-row-start: 2;*/
+  grid-column: 9 / 16;
+  grid-row-start: 3;
 }
 
 #testimonials .container-item:nth-child(1) {
@@ -423,6 +422,11 @@ body.loaded .hero-text a {
 
 #testimonials .container-item:nth-child(2) {
   grid-column: 8/ 17;
+}
+
+#testimonials .container-item:nth-child(3) {
+  grid-column: 8/ 17;
+  grid-row-start: 2;
 }
 
 #contact .container-item:nth-child(1) {
@@ -453,7 +457,8 @@ body.loaded .hero-text a {
   display: flex;
 }
 
-.author img {
+.author img,
+.project img {
   width: 4rem;
   height: 4rem;
   margin: 1rem;
@@ -722,11 +727,11 @@ a.button-inverted:hover {
   font-size: 3rem;
 }
 
-.team-member-image {
+.project-logo {
   position: relative;
 }
 
-.team-member-image img {
+.project-logo img {
   filter: grayscale(100%);
   width: 90%;
   height: 90%;
@@ -998,7 +1003,7 @@ a.button-inverted:hover {
     gap: 3rem;
   }
 
-  .team-member-image img {
+  .project-logo img {
     width: 50%;
     height: 50%;
   }
