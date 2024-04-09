@@ -1103,6 +1103,11 @@ a.button-inverted:hover {
     grid-row-start: 2;
   }
 
+  #testimonials .container-item:nth-child(3) {
+    grid-column: 1 / 7;
+    grid-row-start: 3;
+  }
+
   #contact .container-item:nth-child(1) {
     grid-column: 1 / 7;
   }
