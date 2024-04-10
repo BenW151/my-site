@@ -127,7 +127,7 @@ li {
   position: relative;
   width: 100%;
   padding: var(--spacing-5) 72px;
-  padding-bottom: 8rem;
+  padding-bottom: 30vh;
   justify-content: center;
   margin: 0 auto;
   background-color: var(--accent-secondary);
@@ -135,6 +135,7 @@ li {
 
 .container-item {
   padding: var(--spacing-4);
+  display: flex;
   flex-direction: column;
 }
 
@@ -149,6 +150,15 @@ li {
   grid-template-columns: repeat(16, 1fr);
   column-gap: 1.3888888889vw;
   overflow: visible;
+}
+
+.list-title {
+  margin-bottom: var(--spacing-2);
+}
+
+.socials a, .contact a {
+  padding-top: 0;
+  padding-bottom: var(--spacing-1);
 }
 
 footer .socials {
@@ -434,13 +444,8 @@ footer .container-item {
 }
 
 #contact .container-item:nth-child(1) {
-  grid-column: 1 / 10;
+  grid-column: 2 / 16;
   grid-row-start: 1;
-}
-
-#contact .container-item:nth-child(2) {
-  grid-column: 1 / 17;
-  grid-row-start: 2;
 }
 
 #about .container-item:nth-child(1) {
@@ -539,9 +544,30 @@ nav.scrolled .logo img {
   z-index: 10000;
 }
 
+.contact-hero, .index-hero {
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+
+#hero .container-item:nth-child(1){
+  grid-column: 1 / 10;
+  grid-row-start: 1;
+}
+
+#hero .container-item:nth-child(2){
+  grid-column: 10 / 14;
+  grid-row-start: 1;
+  margin-top: auto;
+}
+
+#hero .container-item:nth-child(3){
+  grid-column: 14 / 17;
+  grid-row-start: 1;
+  margin-top: auto;
+}
+
 .hero-text {
-  margin: auto;
-  margin-top: 18vh;
+  align-self: center;
 }
 
 .hero-text h1 {
@@ -646,7 +672,7 @@ textarea:focus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-3);
-  padding: 0;
+  padding: var(--spacing-3);
   padding-top: var(--spacing-5);
 }
 
@@ -806,7 +832,7 @@ a.button-inverted:hover {
   }
 
   .container {
-    padding: var(--spacing-5) 16px;
+    padding: 10vh var(--spacing-3);
   }
 
   .grid,
@@ -846,10 +872,6 @@ a.button-inverted:hover {
 
   .hover-underline a::after {
     content: none;
-  }
-
-  .hero-text {
-    margin-top: 25vh;
   }
 
   .burger-menu {
@@ -1004,6 +1026,23 @@ a.button-inverted:hover {
     grid-row-start: 4;
   }
 
+  #hero .container-item:nth-child(1){
+    grid-column: 1 / 7;
+    grid-row-start: 1;
+  }
+  
+  #hero .container-item:nth-child(2){
+    grid-column: 1 / 4;
+    grid-row-start: 2;
+    margin-top: 15vh;
+  }
+  
+  #hero .container-item:nth-child(3){
+    grid-column: 4 / 7;
+    grid-row-start: 2;
+    margin-top: 15vh;
+  }
+
   #services .container-item:nth-child(1) {
     grid-column: 1 / 7;
   }
@@ -1078,6 +1117,11 @@ a.button-inverted:hover {
   #contact .container-item:nth-child(2) {
     grid-column: 1 / 7;
     grid-row-start: 2;
+  }
+
+  #contact .container-item:nth-child(2) {
+    grid-column: 1 / 7;
+    grid-row-start: 3;
   }
 
   #about .container-item:nth-child(1) {
