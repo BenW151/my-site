@@ -45,7 +45,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  transition: color 0.2s linear, background-color 0.2s linear;
+  transition: all 0.3s ease-in-out, color 0.2s linear, background-color 0.2s linear;
 }
 
 body {
@@ -164,6 +164,13 @@ li {
 }
 
 .footer-contact {
+  display: flex;
+  flex-direction: column;
+  grid-column: 14/17;
+  grid-row-start: 2;
+}
+
+.contact {
   display: flex;
   flex-direction: column;
   grid-column: 14/17;
@@ -417,16 +424,16 @@ body.loaded .hero-text a {
 }
 
 #projects .container-item:nth-child(2) {
-  grid-column: 8 / 16;
+  grid-column: 8 / 17;
 }
 
 #projects .container-item:nth-child(3) {
-  grid-column: 8 / 16;
+  grid-column: 8 / 17;
   grid-row-start: 2;
 }
 
 #projects .container-item:nth-child(4) {
-  grid-column: 8 / 16;
+  grid-column: 8 / 17;
   grid-row-start: 3;
 }
 
@@ -445,10 +452,12 @@ body.loaded .hero-text a {
 
 #contact .container-item:nth-child(1) {
   grid-column: 1 / 10;
+  grid-row-start: 1;
 }
 
 #contact .container-item:nth-child(2) {
-  grid-column: 10/ 17;
+  grid-column: 3 / 16;
+  grid-row-start: 2;
 }
 
 #about .container-item:nth-child(1) {
@@ -540,7 +549,7 @@ nav.scrolled .logo img {
   overflow: hidden;
 }
 
-#hero .container {
+#hero .container.index {
   height: 100vh;
 }
 
@@ -656,19 +665,19 @@ input,
 textarea {
   box-sizing: border-box;
   border: 2px solid var(--font-color-secondary);
-  color: var(--font-color-primary);
-  position: relative;
   border-radius: var(--border-radius-box);
+  color: var(--font-color-primary);
+  background-color: var(--background-opacity);
+  position: relative;
   padding: var(--spacing-3);
   margin-left: var(--spacing-3);
   width: 90%;
   outline: none;
-  background-color: var(--background-opacity);
   font-family: var(--font-family-secondary);
 }
 
-label {
-  padding-left: var(--spacing-3);
+textarea {
+  height: 200px;
 }
 
 input:focus,
@@ -676,10 +685,14 @@ textarea:focus {
   border: 2px solid var(--accent-primary);
 }
 
-.contact-details {
+label {
+  padding-left: var(--spacing-3);
+}
+
+/*.contact-details {
   width: 100%;
   margin: auto;
-}
+}*/
 
 a {
   padding-left: var(--spacing-3);
