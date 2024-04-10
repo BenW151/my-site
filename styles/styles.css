@@ -120,7 +120,10 @@ ul {
 li {
   position: relative;
   padding: var(--spacing-2);
-  padding-left: 2rem;
+}
+
+li i {
+  padding-right: var(--spacing-3);
 }
 
 .container {
@@ -461,11 +464,7 @@ body.loaded .hero-text a {
 }
 
 #about .container-item:nth-child(1) {
-  grid-column: 1 / 10;
-}
-
-#about .container-item:nth-child(2) {
-  grid-column: 10/ 17;
+  grid-column: 1 / 15;
 }
 
 #skills .container-item:nth-child(1) {
@@ -779,15 +778,6 @@ a.button-inverted:hover {
   color: var(--accent-secondary);
 }
 
-.icon-arrow-right::before {
-  content: "\e5cc";
-  font-size: 1.5rem;
-  position: absolute;
-  left: 0;
-  padding-left: 0;
-  color: var(--accent-primary);
-}
-
 .skill-wrap {
   text-align: center;
   margin: auto 0;
@@ -938,41 +928,44 @@ h6 {
     border-radius: 100%;
   }
 
-  .icon-burger {
+  .burger-menu {
     position: relative;
     width: 2rem;
     height: 2rem;
     display: inline-block;
   }
 
-  .icon-burger::before,
-  .icon-burger::after {
+  .burger-menu::before,
+  .burger-menu::after {
     position: absolute;
     top: 50%;
     left: 50%;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 1.5rem;
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease, opacity 0.5s ease;
   }
 
-  .icon-burger::before {
-    content: "\e5d2";
+  .burger-menu::before {
+    content: "\f0c9";
     color: inherit;
     opacity: 1;
   }
 
-  .icon-burger::after {
-    content: "\e5cd";
+  .burger-menu::after {
+    content: "\f00d";
     color: inherit;
     opacity: 0;
     transform: translate(-50%, -50%) rotate(90deg);
   }
 
-  .icon-burger.active::before {
+  .burger-menu.active::before {
     opacity: 0;
     transform: translate(-50%, -50%) rotate(-90deg);
   }
 
-  .icon-burger.active::after {
+  .burger-menu.active::after {
     opacity: 1;
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -1021,13 +1014,6 @@ h6 {
   .navigation-items.nav-open {
     transform: translateY(0);
     transition: transform 0.5s ease-in-out;
-  }
-
-  .navigation-item.icon-chevron-right:after {
-    display: inline-block;
-    margin-left: auto;
-    position: relative;
-    padding: 0;
   }
 
   .navigation-item.button {
@@ -1174,11 +1160,6 @@ h6 {
 
   #about .container-item:nth-child(1) {
     grid-column: 1 / 7;
-  }
-
-  #about .container-item:nth-child(2) {
-    grid-column: 1 / 7;
-    grid-row-start: 2;
   }
 
   #skills .container-item:nth-child(1) {
