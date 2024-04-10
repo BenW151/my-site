@@ -74,21 +74,21 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 8vw;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3vw;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2.5vw;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1.25rem;
+  font-size: 2vw;
 }
 
 p {
@@ -497,12 +497,26 @@ body.loaded .hero-text a {
   max-width: 0;
   overflow: hidden;
   white-space: nowrap;
-  transition: max-width 0.7s ease-in-out;
+  transition: max-width 1s ease-in-out;
 }
 
 nav.scrolled .logo a {
-  max-width: 200px;
-  transition: max-width 0.7s ease-in-out 0.3s;
+  max-width: 350px;
+  transition: max-width 1s ease-in-out 0.3s;
+}
+
+.logo img {
+  opacity: 1;
+  width: 4rem;
+  height: 4rem;
+  margin-left: var(--spacing-3);
+  transition: opacity 0.3s ease-in-out 1s;
+  position: absolute;
+}
+
+nav.scrolled .logo img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .progress-container {
@@ -515,26 +529,11 @@ nav.scrolled .logo a {
   z-index: 10000;
 }
 
-/* The progress bar (scroll indicator) */
 .progress-bar {
   height: 2px;
   background: var(--accent-primary);
   width: 0%;
   z-index: 10000;
-}
-
-.logo img {
-  opacity: 1;
-  width: 4rem;
-  height: 4rem;
-  margin-left: var(--spacing-3);
-  transition: opacity 0.3s ease-in-out 0.7s;
-  position: absolute;
-}
-
-nav.scrolled .logo img {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
 #hero {
@@ -816,6 +815,25 @@ a.button-inverted:hover {
     scroll-behavior: auto;
   }
 
+  
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.25rem;
+}
+
   .logo {
     color: var(--accent-primary);
     margin-left: 0;
@@ -958,9 +976,9 @@ a.button-inverted:hover {
     z-index: -1;
     align-items: center;
     justify-content: flex-start;
-    transform: translateY(-100%);
+    transform: translateY(-130%);
     transition: transform 0.5s ease-out;
-    padding-top: 33%;
+    padding-top: 13vh;
   }
 
   .navigation-item {
@@ -1206,6 +1224,8 @@ a.button-inverted:hover {
     grid-column: 13 / 17;
     grid-row-start: 2;
   }
+
+  /*TODO tablet grid responsiveness*/
 
   #projects .container-item:nth-child(1) {
     grid-column: 1 / 9;
