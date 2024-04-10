@@ -195,30 +195,30 @@
                 <form
                   action="https://formspree.io/f/mjvnevrk"
                   method="POST"
-                  autocomplete="on">
-                  <label>
-                    <p>Name:</p>
+                  autocomplete="on"
+                  class="contact-form">
+                  <label class="form-name">
                     <input
                       type="text"
                       name="name"
                       autocomplete="name"
+                      placeholder="Name"
                       required />
                   </label>
-                  <label>
-                    <p>Email:</p>
+                  <label class="form-email">
                     <input
                       type="email"
                       name="email"
                       autocomplete="email"
+                      placeholder="Email"
                       required />
                   </label>
-                  <label>
-                    <p>Project Title</p>
-                    <input type="text" name="project-title" required />
+                  <label class="form-project">
+                    <input type="text" name="project-title" placeholder="Project Title"
+                    required />
                   </label>
-                  <label>
-                    <p>Message:</p>
-                    <textarea type="text" name="message" required></textarea>
+                  <label class="form-message">
+                    <textarea type="text" name="message" placeholder="Message" required></textarea>
                   </label>
                   <button class="button button-secondary" type="submit">
                     Submit
