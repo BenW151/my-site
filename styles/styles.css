@@ -334,7 +334,7 @@ footer {
 
 .reveal-content {
   transform: translateY(160%);
-  animation: reveal 1.7s cubic-bezier(1, 0, 0.1, 0.9) forwards;
+  animation: reveal 1.7s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
 .reveal:nth-child(2) .reveal-content {
@@ -829,6 +829,7 @@ a.button-inverted:hover {
     margin-left: 0;
     margin-top: var(--spacing-1);
     margin-bottom: var(--spacing-1);
+    z-index: -1;
   }
 
   .container {
@@ -985,7 +986,7 @@ a.button-inverted:hover {
 
   .navigation-items.nav-open {
     transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   .navigation-items .logo-svg {
