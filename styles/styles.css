@@ -175,11 +175,10 @@ footer .contact {
   grid-row-start: 2;
 }
 
-/*TODO fix below for contact page*/
 .contact {
   display: flex;
   flex-direction: column;
-  grid-column: 14/17;
+  grid-column: 14 / 17;
   grid-row-start: 2;
 }
 
@@ -601,7 +600,7 @@ nav.scrolled .logo img {
   left: 16px;
   background-color: var(--font-color-primary);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .hover-underline.logo a::after {
@@ -850,7 +849,7 @@ a.button-inverted:hover {
   }
 
   .container {
-    padding: 10vh var(--spacing-3);
+    padding: 15vh var(--spacing-3);
   }
 
   .grid,
@@ -1218,26 +1217,6 @@ a.button-inverted:hover {
 
   .footer-end .item:nth-child(4) {
     grid-column: 13 / 17;
-    grid-row-start: 2;
-  }
-
-  /*TODO tablet grid responsiveness*/
-
-  #projects .container-item:nth-child(1) {
-    grid-column: 1 / 9;
-  }
-
-  #projects .container-item:nth-child(2) {
-    grid-column: 9 / 17;
-  }
-
-  #projects .container-item:nth-child(3) {
-    grid-column: 1 / 9;
-    grid-row-start: 2;
-  }
-
-  #projects .container-item:nth-child(4) {
-    grid-column: 9 / 17;
     grid-row-start: 2;
   }
 }
