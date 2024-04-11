@@ -427,29 +427,31 @@ footer .container-item {
 }
 
 #projects .container-item:nth-child(2) {
-  grid-column: 8 / 17;
+  grid-column: 7 / 17;
 }
 
 #projects .container-item:nth-child(3) {
-  grid-column: 8 / 17;
+  grid-column: 7 / 17;
   grid-row-start: 2;
 }
 
 #projects .container-item:nth-child(4) {
-  grid-column: 8 / 17;
+  grid-column: 7 / 17;
   grid-row-start: 3;
 }
 
 #testimonials .container-item:nth-child(1) {
   grid-column: 1 / 8;
+  grid-row-start: 1;
 }
 
 #testimonials .container-item:nth-child(2) {
-  grid-column: 8/ 17;
+  grid-column: 7 / 17;
+  grid-row-start: 1;
 }
 
 #testimonials .container-item:nth-child(3) {
-  grid-column: 8/ 17;
+  grid-column: 7 / 17;
   grid-row-start: 2;
 }
 
