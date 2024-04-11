@@ -126,8 +126,7 @@ li {
 .container {
   position: relative;
   width: 100%;
-  padding: var(--spacing-5) 72px;
-  padding-bottom: 30vh;
+  padding: 15vh 5vw;
   justify-content: center;
   margin: 0 auto;
   background-color: var(--accent-secondary);
@@ -201,18 +200,16 @@ nav .card {
   filter: grayscale(100%);
 }
 
-.name {
+.card p {
   text-wrap: nowrap;
   margin: 0;
+}
+
+.name {
   font-weight: bold;
 }
 
-.role {
-  margin: 0;
-}
-
 .italic {
-  margin: 0;
   font-style: italic;
 }
 
@@ -306,7 +303,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-3);
   padding: 0;
-  max-height: 60%;
+  min-height: 50%;
   align-self: center;
 }
 
@@ -327,6 +324,7 @@ footer {
 .text-center-align .button {
   text-align: center;
   margin: auto;
+  margin-top: var(--spacing-3);
 }
 
 .text-mask {
@@ -377,6 +375,7 @@ body.loaded .opacity-reveal {
 footer .container,
 #learn-more .container {
   padding-bottom: var(--spacing-5);
+  padding-top: var(--spacing-5);
 }
 
 footer .grid {
@@ -712,6 +711,10 @@ form .button {
   grid-row-start: 3;
 }
 
+.contact-quote {
+  max-width: 50%;
+}
+
 a {
   padding-left: var(--spacing-3);
   padding-right: var(--spacing-3);
@@ -872,6 +875,10 @@ a.button-inverted:hover {
     flex-direction: column;
     grid-row-start: 3;
     grid-column: 1 / span 16;
+  }
+
+  .contact-quote {
+    max-width: 90%;
   }
 
   nav .contact {
