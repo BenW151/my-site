@@ -31,7 +31,7 @@ body {
   --font-size-subhead: 2.5vw;
   --font-size-subsubhead: 2vw;
   /*TODO rename font size classes*/
-  --font-size-regular: 1.1vw;
+  --font-size-regular: 1.2vw;
 }
 
 .light-mode {
@@ -526,6 +526,11 @@ footer .grid {
   transition: max-width 1s ease-in-out;
 }
 
+.logo a::after {
+  background-color: var(--accent-primary);
+  bottom: 0;
+}
+
 nav.scrolled .logo a {
   max-width: 350px;
   transition: max-width 1s ease-in-out 0.3s;
@@ -609,29 +614,29 @@ a::after,
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .button::after {
   transform: scaleX(1);
 }
 
 .button:hover::after {
   transform: scaleX(0);
-  transform-origin: bottom left;
+  transform-origin: bottom right;
 }
 
 .button i {
   max-width: 0;
   overflow: hidden;
-  font-size: calc(0.5 * var(--font-size-regular));
+  font-size: calc(0.75 * var(--font-size-regular));
 }
 
 .button:hover i {
   padding-right: var(--spacing-1);
   max-width: 2rem;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 nav {
@@ -664,6 +669,7 @@ nav {
 
 .logo-svg {
   margin: auto var(--spacing-3);
+  margin-left: 0;
 }
 
 .navigation-items .logo-svg {
