@@ -24,8 +24,8 @@ body {
   --background-primary: #1d1d1c;
   --background-secondary: #f2f3f4;
   --background-opacity: rgba(0, 0, 0, 0.1);
-  --font-family-primary: "Montserrat", sans-serif;
-  --font-family-secondary: "PT Sans", sans-serif;
+  --font-family-primary: "Lexend", sans-serif;
+  --font-family-secondary: "Roboto Flex", sans-serif;
   --font-size-hero: 8vw;
   --font-size-head: 3vw;
   --font-size-subhead: 2.5vw;
@@ -74,7 +74,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-primary);
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   margin-bottom: var(--spacing-2);
   margin-top: 0;
@@ -82,6 +82,7 @@ h6 {
 
 h1 {
   font-size: var(--font-size-hero);
+  margin-bottom: 0;
 }
 
 h2 {
@@ -100,11 +101,11 @@ h6 {
 
 p {
   margin-top: 0;
+  line-height: 1.3;
   font-family: var(--font-family-secondary);
   font-weight: normal;
   font-style: normal;
   font-size: var(--font-size-regular);
-  line-height: 1.8vw;
 }
 
 a,
@@ -198,6 +199,10 @@ nav .card {
   grid-column: 1 / 10;
 }
 
+.card-text {
+  align-self: center;
+}
+
 .card img {
   width: 4rem;
   height: 4rem;
@@ -267,7 +272,7 @@ footer {
   position: relative;
   z-index: -1;
   transform: translateY(-12rem);
-  transition: transform 0.5s linear;
+  transition: transform linear;
 }
 
 #learn-more {
@@ -284,6 +289,8 @@ footer {
 }
 
 .marquee {
+  font-family: var(--font-family-primary);
+  font-weight: 300;
   font-size: 18vw;
   padding-right: 0.25em;
   animation: marqueeLoop 5s infinite linear;
@@ -516,14 +523,24 @@ footer .grid {
 }
 
 .logo a {
+  display: flex;
   font-size: var(--font-size-subhead);
   margin-left: var(--spacing-3);
   margin-bottom: 0;
-  display: inline-block;
-  max-width: 0;
   overflow: hidden;
   white-space: nowrap;
-  transition: max-width 1s ease-in-out;
+  transition: max-width 2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.logo-hide {
+  max-width: 100px;
+  white-space: pre;
+}
+
+nav.scrolled .logo-hide {
+  max-width: 0px;
+  overflow: hidden;
+  transition: max-width 2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .logo a::after {
@@ -531,12 +548,7 @@ footer .grid {
   bottom: 0;
 }
 
-nav.scrolled .logo a {
-  max-width: 350px;
-  transition: max-width 1s ease-in-out 0.3s;
-}
-
-.logo img {
+/*.logo img {
   opacity: 1;
   width: 4rem;
   height: 4rem;
@@ -549,7 +561,7 @@ nav.scrolled .logo a {
 nav.scrolled .logo img {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
+}*/
 
 .progress-container {
   position: absolute;
@@ -841,7 +853,7 @@ a.button-inverted:hover {
     --spacing-3: 4.6vw;
     --spacing-4: 5vw;
     --spacing-5: 7vw;
-    --font-size-hero: 9vw;
+    --font-size-hero: 15vw;
     --font-size-head: 7vw;
     --font-size-subhead: 6vw;
     --font-size-subsubhead: 5vw;
@@ -855,34 +867,33 @@ a.button-inverted:hover {
   }
 
   h1 {
-    font-size: 9vw;
+    font-size: var(--font-size-hero);
   }
 
   h2 {
-    font-size: 7vw;
+    font-size: var(--font-size-head);
   }
 
   h3 {
-    font-size: 6vw;
+    font-size: var(--font-size-subhead);
   }
 
   h4,
   h5,
   h6 {
-    font-size: 5vw;
+    font-size: var(--font-size-subhead);
   }
 
   p,
   a,
   button {
-    font-size: 4vw;
-    line-height: 5vw;
+    font-size: var(--font-size-regular);
   }
 
   .hero-text h2,
   .hero-text p,
   .hero-text .button {
-    margin-left: 0;
+    margin-left: 1vw;
   }
 
   .logo {
@@ -951,7 +962,7 @@ a.button-inverted:hover {
     width: 100%;
     transform: scaleX(1);
     height: 2px;
-    bottom: -15px;
+    bottom: 0;
     left: 0;
     background-color: var(--font-color-primary);
   }
@@ -1028,22 +1039,16 @@ a.button-inverted:hover {
   }
 
   .navigation-item {
-    padding: var(--spacing-2) 0;
     margin: 0;
     font-size: var(--font-size-regular);
     font-family: var(--font-family-primary);
     transition: transform 0.5s ease-in-out;
-  }
-
-  .navigation-items a {
     display: flex;
     font-size: var(--font-size-hero);
     margin: 0;
     margin-right: auto;
     margin-left: var(--spacing-4);
-    margin-bottom: var(--spacing-3);
     align-items: center;
-    padding-bottom: 0;
   }
 
   .navigation-items a:focus,

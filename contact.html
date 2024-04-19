@@ -54,10 +54,7 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap"
       rel="stylesheet" />
 
     <!-- JavaScript Files -->
@@ -98,8 +95,11 @@
         <div class="progress-bar" id="myBar"></div>
       </div>
       <h2 class="logo">
-        <a href="index.html" aria-label="Home Page">Ben Ward</a>
-        <img class="logo-svg" src="images/bw-logo.svg" alt="BW Logo" />
+        <a href="index.html" aria-label="Home Page"
+          >B<span class="logo-hide">en </span>W<span class="logo-hide"
+            >ard</span
+          ></a
+        >
       </h2>
       <div class="burger-menu"></div>
       <div class="navigation-items">
@@ -147,7 +147,7 @@
           <div>
             <img class="logo-svg" src="images/bw-logo.svg" alt="BW Logo" />
           </div>
-          <div>
+          <div class="card-text">
             <p class="name">Ben Ward</p>
             <p class="role">Web Developer</p>
             <p class="italic">
@@ -249,7 +249,7 @@
                       placeholder="Message"
                       required></textarea>
                   </label>
-                  <button class="button" type="submit">Submit</button>
+                  <button class="button" type="submit"><i class="fa-regular fa-envelope"></i>Submit</button>
                 </form>
               </div>
             </div>
@@ -290,7 +290,7 @@
                 src="images/bw-logo-inverted.svg"
                 alt="team member 1" />
             </div>
-            <div>
+            <div class="card-text">
               <p class="name">Ben Ward</p>
               <p class="role">Web Developer</p>
               <p class="italic">
