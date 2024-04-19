@@ -334,30 +334,38 @@ footer {
   margin-top: var(--spacing-3);
 }
 
-.text-mask {
-  margin: 0;
+@keyframes reveal {
+  0% {
+    transform: translateY(100%);
+    rotate: 2deg;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    rotate: 0deg;
+    opacity: 1;
+  }
+}
+
+.text-reveal {
+  display: flex;
+  flex-wrap: wrap;
   margin-right: auto;
+  --gap-size: 8px; 
+  gap: var(--gap-size);
+}
+
+.reveal-mask {
   overflow: hidden;
+  display: inline-block;
+  height: auto;
 }
 
-.reveal {
-  transform: translateY(100%);
-  transform-origin: top left;
+.word {
+  display: inline-block;
+  transform: translateY(100%) rotate(2deg);
+  animation: none;
   opacity: 0;
-  rotate: 2deg;
-  animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
-}
-
-.text-mask:nth-child(2) .reveal {
-  animation-delay: 0.5s;
-}
-
-.text-mask:nth-child(3) .reveal {
-  animation-delay: 1s;
-}
-
-.text-mask:nth-child(4) .reveal {
-  animation-delay: 1.5s;
 }
 
 .opacity-reveal {
@@ -368,19 +376,6 @@ footer {
 
 body.loaded .opacity-reveal {
   opacity: 1;
-}
-
-@keyframes reveal {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-    rotate: 2deg;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    rotate: 0deg;
-  }
 }
 
 footer .container,
@@ -760,7 +755,6 @@ a.button {
   margin: var(--spacing-3) 0;
   margin-top: 0;
   margin-right: auto;
-  display: flex;
   align-items: center;
   font-family: var(--font-family-secondary);
 }
@@ -888,6 +882,7 @@ a.button-inverted:hover {
   a,
   button {
     font-size: var(--font-size-regular);
+    margin-right: auto;
   }
 
   .hero-text h2,

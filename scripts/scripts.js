@@ -164,3 +164,63 @@ document.addEventListener("DOMContentLoaded", function () {
       icon.classList.toggle("fa-moon");
     });
 });
+
+//* Text reveal
+document.addEventListener('DOMContentLoaded', function() {
+  const textContainers = document.querySelectorAll('.text-reveal');
+
+  textContainers.forEach(container => {
+    prepareText(container);  // Prepare each container immediately on load
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateText(entry.target);
+        observer.unobserve(entry.target);  // Optional: Stop observing after animating
+      }
+    });
+  }, {
+    rootMargin: '0px',
+    threshold: 0.8 // This triggers the animation when 10% of the element is visible
+  });
+
+  textContainers.forEach(container => {
+    observer.observe(container);  // Start observing each text container
+  });
+
+  function prepareText(container) {
+    const phrase = container.textContent.trim();
+    container.textContent = ''; // Clear the container
+    const words = phrase.split(/\s+/);  // Split phrase into words at one or more whitespace
+    const fontSize = window.getComputedStyle(container).fontSize;
+    const gapSize = parseFloat(fontSize) / 6;  // Calculate gap size based on font size
+
+    container.style.setProperty('--gap-size', `${gapSize}px`);  // Set the gap size
+
+    words.forEach((word) => {
+      let wordContainer = document.createElement('div');
+      wordContainer.classList.add('reveal-mask');
+      wordContainer.style.overflow = 'hidden';  // Hide overflow to control visibility
+
+      let wordSpan = document.createElement('span');
+      wordSpan.classList.add('word');
+      wordSpan.textContent = word + ' ';
+
+      wordContainer.appendChild(wordSpan);
+      container.appendChild(wordContainer);
+    });
+  }
+
+  function animateText(container) {
+    const wordSpans = container.querySelectorAll('.word');
+
+    const revealDelay = container.getAttribute('reveal-delay') !== null ? parseInt(container.getAttribute('reveal-delay')) : 100;  // Default delay is 200ms, properly handle "0"
+
+    wordSpans.forEach((span, index) => {
+      setTimeout(() => {
+        span.style.animation = 'reveal 0.6s forwards';  // Apply the reveal animation
+      }, revealDelay * index);  // Use custom delay for stagger timing
+    });
+  }
+});
